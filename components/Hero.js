@@ -1,9 +1,9 @@
 export default function Hero() {
   return (
-    <section class="text-gray-600 body-font">
-      <div class="container mx-auto border-b flex px-5 py-24 items-center justify-center flex-col w-7/12">
+    <section class="text-gray-500 body-font">
+      <div class="container mx-auto border-b flex px-5 py-24 items-center justify-center flex-col">
         <div class="text-center lg:w-2/3 w-full">
-          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+          <h1 class="title-font sm:text-4xl text-6xl mb-4 font-medium text-gray-900">
             Hi! Welcome to my website
           </h1>
           <p class="leading-relaxed">

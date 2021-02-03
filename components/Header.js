@@ -3,7 +3,7 @@ import Head from "next/head"
 export default function Header() {
   return (
     <header class="text-gray-600 body-font ">
-      <div class="container w-7/12 border-b mx-auto flex flex-wrap py-5 flex-col md:flex-row items-center">
+      <div class="container border-b mx-auto flex flex-wrap py-5 flex-col md:flex-row items-center">
         <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
           <span class="text-xl">Oladotun Aluko</span>
         </a>

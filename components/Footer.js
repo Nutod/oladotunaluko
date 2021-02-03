@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
-    <footer class="text-gray-600 body-font divide-y">
-      <div class="container w-7/12 border-t px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+    <footer class="text-gray-500 body-font divide-y">
+      <div class="container border-t px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
         <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
           <span class="text-xl">Oladotun Aluko</span>
         </a>
@@ -9,7 +9,7 @@ export default function Footer() {
           © 2021 Tailblocks —
           <a
             href="https://twitter.com/knyttneve"
-            class="text-gray-600 ml-1"
+            class="text-gray-500 ml-1"
             rel="noopener noreferrer"
             target="_blank"
           >
