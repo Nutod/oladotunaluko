@@ -1,6 +1,7 @@
 {
-  "name": "with-tailwindcss",
+  "name": "oladotunaluko",
   "version": "0.1.0",
+  "author": "Oladotun Aluko",
   "private": true,
   "scripts": {
     "dev": "next dev",
