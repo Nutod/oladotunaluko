@@ -3,7 +3,7 @@ export default function Hero() {
     <section className="text-gray-500 body-font">
       <div className="container mx-auto border-b flex px-5 py-24 items-center justify-center flex-col">
         <div className="text-center lg:w-2/3 w-full">
-          <h1 className="title-font sm:text-4xl text-6xl mb-4 font-medium text-gray-900">
+          <h1 className="title-font sm:text-5xl text-6xl mb-4 font-overpass font-bold text-gray-900">
             Hi! Welcome to my website 👋
           </h1>
           <p className="leading-relaxed">
