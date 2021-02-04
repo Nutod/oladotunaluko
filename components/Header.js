@@ -4,8 +4,8 @@ import Logo from "./Logo"
 
 export default function Header() {
   return (
-    <header className="text-gray-600 body-font ">
-      <div className="container border-b mx-auto flex flex-wrap py-5 flex-col md:flex-row items-center">
+    <header className="text-gray-600 shadow">
+      <div className="container mx-auto flex flex-wrap py-5 flex-col md:flex-row items-center">
         <Logo />
         <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
           <Link href="/about">
