@@ -1,52 +1,52 @@
 :root {
-   // Color Definitions
-   --color-primary: #ff6e6c;
-   --color-white: #fffffe;
-   --color-secondary: #67568c;
-   --color-tertiary: #fbdd74;
-   --color-black: #1f1235;
-   --color-black-variant: #1b1425;
- 
-   // Color Intentions
-   --backgroundColor: var(--color-white);
-   --headingColor: var(--color-black);
-   --textColor: var(--color-black-variant);
- 
-   // Font Definitions
-   --heading-font: "Chivo", sans-serif;
-   --body-font: "Overpass", sans-serif;
- 
-   // Elevations
-   --elevation-one: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
-     0 1px 2px 0 rgba(0, 0, 0, 0.06);
-   --elevation-two: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-     0 2px 4px -1px rgba(0, 0, 0, 0.06);
-   --elevation-three: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-     0 4px 6px -2px rgba(0, 0, 0, 0.05);
-   --elevation-four: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
-     0 10px 10px -5px rgba(0, 0, 0, 0.04);
- }
- 
- *,
- *:before,
- *:after {
-   box-sizing: inherit;
- }
- 
- *::selection {
-   background: var(--color-primary);
- }
- 
- html {
-   box-sizing: border-box;
-   font-size: 100%;
- }
- 
- body {
-   background-color: var(--backgroundColor);
-   font-family: var(--body-font);
-   font-weight: 300;
-   line-height: 1.65;
-   color: var(--textColor);
-   padding: 0 2.5%;
- }
+  // Color Definitions
+  --color-primary: #ff6e6c;
+  --color-white: #fffffe;
+  --color-secondary: #67568c;
+  --color-tertiary: #fbdd74;
+  --color-black: #1f1235;
+  --color-black-variant: #1b1425;
+
+  // Color Intentions
+  --backgroundColor: var(--color-white);
+  --headingColor: var(--color-black);
+  --textColor: var(--color-black-variant);
+
+  // Font Definitions
+  --heading-font: 'Inter', sans-serif;
+  --body-font: 'PT Sans', sans-serif;
+
+  // Elevations
+  --elevation-one: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --elevation-two: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --elevation-three: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --elevation-four: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+*::selection {
+  background: var(--color-primary);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+body {
+  background-color: var(--backgroundColor);
+  font-family: var(--body-font);
+  font-weight: 300;
+  line-height: 1.65;
+  color: var(--textColor);
+  padding: 0 2.5%;
+}
