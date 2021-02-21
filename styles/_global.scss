@@ -1,11 +1,11 @@
 :root {
   // Color Definitions
-  --color-primary: #ff6e6c;
+  --color-primary: #00ebc7;
   --color-white: #fffffe;
-  --color-secondary: #67568c;
-  --color-tertiary: #fbdd74;
-  --color-black: #1f1235;
-  --color-black-variant: #1b1425;
+  --color-secondary: #ff5470;
+  --color-tertiary: #fde24f;
+  --color-black: #1b2d45;
+  --color-black-variant: #00214d;
 
   // Color Intentions
   --backgroundColor: var(--color-white);
@@ -48,5 +48,6 @@ body {
   font-weight: 300;
   line-height: 1.65;
   color: var(--textColor);
-  padding: 0 2.5%;
+  margin: clamp(2rem, 5%, 5rem);
+  overflow: hidden;
 }

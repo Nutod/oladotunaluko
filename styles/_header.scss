@@ -1,0 +1,45 @@
+header {
+  display: grid;
+  grid-template-columns: fit-content(35ch) 1fr;
+
+  margin-bottom: 2rem;
+
+  @media screen and (max-width: 600px) {
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 1rem;
+  }
+
+  h4,
+  a {
+    margin: 0;
+  }
+
+  div {
+    @media screen and (max-width: 600px) {
+      grid-column: 1 / -1;
+      justify-self: center;
+    }
+  }
+
+  nav {
+    align-self: center;
+    justify-self: end;
+
+    & > a {
+      margin-left: 1.5rem;
+    }
+
+    @media screen and (max-width: 600px) {
+      grid-column: 1 / -1;
+      justify-self: center;
+
+      & > a {
+        margin-left: 0;
+      }
+
+      & > a:not(:first-child) {
+        margin-left: clamp(0.8rem, 2.5rem, 5rem);
+      }
+    }
+  }
+}
