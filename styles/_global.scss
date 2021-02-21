@@ -1,9 +1,11 @@
 :root {
   // Color Definitions
   --color-primary: #00ebc7;
+  --color-primary-variant: #5cffe7;
   --color-white: #fffffe;
   --color-secondary: #ff5470;
   --color-tertiary: #fde24f;
+  --color-tertiary-variant: #feef9a;
   --color-black: #00214d;
   --color-black-variant: #1b2d45;
 
@@ -11,6 +13,11 @@
   --backgroundColor: var(--color-white);
   --headingColor: var(--color-black);
   --textColor: var(--color-black-variant);
+
+  // dark mode
+  // --backgroundColor: var(--color-black-variant);
+  // --headingColor: var(--color-white);
+  // --textColor: var(--color-white);
 
   // Font Definitions
   --heading-font: 'Gilroy', sans-serif;
@@ -70,7 +77,7 @@ body {
   line-height: 1.65;
   color: var(--textColor);
   padding: clamp(2rem, 5%, 5rem);
-  overflow: hidden;
+  overflow-x: hidden;
   font-size: 1.2rem;
 
   border-width: 0.3rem 0;
@@ -78,8 +85,10 @@ body {
   border-image: linear-gradient(
       to right,
       var(--color-primary) 10%,
-      var(--color-secondary) 50%,
-      var(--color-tertiary) 90%
+      var(--color-primary-variant) 20%,
+      var(--color-tertiary) 45%,
+      var(--color-tertiary-variant) 70%,
+      var(--color-secondary) 90%
     )
     1;
 }

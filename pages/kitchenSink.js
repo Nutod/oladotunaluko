@@ -254,7 +254,7 @@ export default function KitchenSink() {
       readers know that I'm not a normal link.
       <br />I am <a href="http://yourwebsite.com">an internal link</a>. Change
       the stylesheet's "http://yourwebsite.com" to your domain name so I don't
-      look like an external link.
+      look like an external link. some other content
       <br />
     </>
   )
