@@ -1,6 +1,27 @@
-export default function KitchenSink() {
+import React from 'react'
+
+export default function Elements() {
+  // Move to context
+  // Use local storage for this later
+  const [theme, setTheme] = React.useState('')
+
+  const toggleTheme = () => {
+    setTheme(theme => (theme === '' ? 'dark' : ''))
+  }
+
+  React.useEffect(() => {
+    if (theme === 'dark') {
+      document.body.classList.add('dark')
+    } else {
+      document.body.classList.remove('dark')
+    }
+  }, [theme])
+
   return (
     <>
+      <button onClick={toggleTheme}>
+        Toggle {theme === '' ? 'Dark' : 'Light'}
+      </button>
       <header>
         <div>
           <h3>
@@ -58,6 +79,8 @@ export default function KitchenSink() {
       <pre>
         <strong>Preformated:</strong>Testing one row and another
       </pre>
+      <img src="https://placeimg.com/640/480/nature" alt="Nature" />
+      <code>Code content here</code>
       <p>
         I am <a href="?abc123">the a tag</a> example
         <br />I am <abbr title="test">the abbr tag</abbr> example
@@ -215,9 +238,7 @@ export default function KitchenSink() {
           <div>
             <label for="f5">Textarea:</label>
             <br />
-            <textarea id="f5" cols="30" rows="5">
-              Textarea text
-            </textarea>
+            <textarea id="f5" cols="30" rows="5" />
           </div>
 
           <div>
