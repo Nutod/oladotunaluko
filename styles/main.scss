@@ -1,12 +1,6 @@
 @import 'reset';
 @import 'base';
 @import 'global';
+@import 'fonts';
 @import 'typography';
-
-@font-face {
-  font-family: 'Gilroy';
-  font-style: bold;
-  font-weight: 700;
-  font-display: swap;
-  src: url('/fonts/Gilroy-Bold.ttf');
-}
+@import 'buttons';
