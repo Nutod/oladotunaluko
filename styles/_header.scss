@@ -4,18 +4,18 @@ header {
 
   margin-bottom: 2rem;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: $medium-breakpoint) {
     grid-template-rows: repeat(2, 1fr);
     grid-row-gap: 1rem;
   }
 
-  h4,
+  h3,
   a {
     margin: 0;
   }
 
   div {
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: $medium-breakpoint) {
       grid-column: 1 / -1;
       justify-self: center;
     }
@@ -29,7 +29,7 @@ header {
       margin-left: 1.5rem;
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: $medium-breakpoint) {
       grid-column: 1 / -1;
       justify-self: center;
 
@@ -38,8 +38,21 @@ header {
       }
 
       & > a:not(:first-child) {
-        margin-left: clamp(0.8rem, 2.5rem, 5rem);
+        margin-left: 5rem;
       }
+    }
+
+    @media screen and (max-width: $really-really-small-breakpoint) {
+      display: flex;
+      flex-wrap: wrap;
+
+      & > a {
+        margin: 1rem !important;
+      }
+
+      // & > a:not(:first-child) {
+      //   margin-left: 5rem;
+      // }
     }
   }
 }

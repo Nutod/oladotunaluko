@@ -3,9 +3,9 @@ export default function KitchenSink() {
     <>
       <header>
         <div>
-          <h4>
+          <h3>
             oladotun<span>aluko</span>
-          </h4>
+          </h3>
         </div>
         <nav>
           <a href="Home">Home</a>

@@ -4,8 +4,8 @@
   --color-white: #fffffe;
   --color-secondary: #ff5470;
   --color-tertiary: #fde24f;
-  --color-black: #1b2d45;
-  --color-black-variant: #00214d;
+  --color-black: #00214d;
+  --color-black-variant: #1b2d45;
 
   // Color Intentions
   --backgroundColor: var(--color-white);
@@ -35,11 +35,32 @@
 
 *::selection {
   background: var(--color-primary);
+  color: var(--color-white);
 }
 
 html {
   box-sizing: border-box;
   font-size: 100%;
+
+  @media screen and (max-width: $large-breakpoint) {
+    font-size: 90%;
+  }
+
+  @media screen and (max-width: $medium-breakpoint) {
+    font-size: 75%;
+  }
+
+  @media screen and (max-width: $small-breakpoint) {
+    font-size: 60%;
+  }
+
+  @media screen and (max-width: $really-small-breakpoint) {
+    font-size: 55%;
+  }
+
+  @media screen and (max-width: $really-really-small-breakpoint) {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -48,6 +69,17 @@ body {
   font-weight: 300;
   line-height: 1.65;
   color: var(--textColor);
-  margin: clamp(2rem, 5%, 5rem);
+  padding: clamp(2rem, 5%, 5rem);
   overflow: hidden;
+  font-size: 1.2rem;
+
+  border-width: 0.3rem 0;
+  border-style: solid;
+  border-image: linear-gradient(
+      to right,
+      var(--color-primary) 10%,
+      var(--color-secondary) 50%,
+      var(--color-tertiary) 90%
+    )
+    1;
 }
