@@ -26,4 +26,8 @@ a {
   &:hover {
     opacity: 0.6;
   }
+
+  &:focus {
+    outline: 2.5px dotted var(--color-secondary);
+  }
 }

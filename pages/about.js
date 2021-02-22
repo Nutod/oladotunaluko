@@ -1,12 +1,6 @@
-import React from "react"
-import Footer from "../components/Footer"
-import Header from "../components/Header"
+import React from 'react'
+import Layout from '../components/Layout'
 
 export default function About() {
-  return (
-    <>
-      <Header />
-      <Footer />
-    </>
-  )
+  return <Layout></Layout>
 }

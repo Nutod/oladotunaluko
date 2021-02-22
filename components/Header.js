@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { useTheme } from '../context/ThemeContext'
 import Logo from './Logo'
 
@@ -11,13 +12,19 @@ export default function Header() {
         <nav>
           <ul>
             <li>
-              <a href="Blog">Blog</a>
+              <Link href="blog">
+                <a>Blog</a>
+              </Link>
             </li>
             <li>
-              <a href="About">About</a>
+              <Link href="about">
+                <a>About</a>
+              </Link>
             </li>
             <li>
-              <a href="Contact">Contact</a>
+              <Link href="contact">
+                <a>Contact</a>
+              </Link>
             </li>
             {theme === 'dark' ? (
               <li onClick={toggleTheme}>
@@ -40,17 +47,17 @@ export default function Header() {
               <li onClick={toggleTheme}>
                 <svg
                   className="large-icon"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
                     d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-                  ></path>
+                  />
                 </svg>
               </li>
             )}
