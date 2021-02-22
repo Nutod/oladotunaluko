@@ -1,6 +1,7 @@
 import React from 'react'
 import { useTheme } from '../context/ThemeContext'
 import Header from './Header'
+import Footer from './Footer'
 
 export default function Layout({ children }) {
   const { theme } = useTheme()
@@ -15,8 +16,9 @@ export default function Layout({ children }) {
 
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       {children}
+      <Footer />
     </>
   )
 }

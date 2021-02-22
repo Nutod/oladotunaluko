@@ -1,14 +1,11 @@
+header {
+  padding-top: $size-700;
+  padding-bottom: $size-900;
+}
+
 .header {
   display: grid;
-  grid-template-columns: fit-content(35ch) 1fr;
-
-  margin-top: $size-700;
-  margin-bottom: $size-900;
-
-  @media screen and (max-width: $large-breakpoint) {
-    grid-template-rows: min-content 1fr;
-    grid-row-gap: 1rem;
-  }
+  grid-template-columns: fit-content(15ch) 1fr;
 
   h3,
   a {
@@ -16,9 +13,12 @@
   }
 
   div {
-    @media screen and (max-width: $large-breakpoint) {
-      grid-column: 1 / -1;
-      justify-self: center;
+    a {
+      border: 0;
+
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 
@@ -30,13 +30,14 @@
       list-style: none;
 
       display: flex;
+      align-items: center;
+      flex-wrap: wrap;
 
       li {
         margin-left: 1rem;
       }
 
       a {
-        padding: 0.2rem;
         border: 0;
         opacity: 0.6;
 
@@ -46,18 +47,18 @@
         }
       }
     }
+  }
 
-    // & > * {
-    //   margin-left: 1.5rem;
-    //   padding: 0.2rem;
-    //   border: 0;
+  @media screen and (max-width: $large-breakpoint) {
+    grid-template-rows: min-content 1fr;
+    grid-row-gap: 1rem;
 
-    //   &:hover {
-    //     border-bottom: 2px solid var(--color-primary);
-    //   }
-    // }
+    div {
+      grid-column: 1 / -1;
+      justify-self: center;
+    }
 
-    @media screen and (max-width: $large-breakpoint) {
+    nav {
       grid-column: 1 / -1;
       justify-self: center;
 
@@ -68,9 +69,15 @@
       & > a:not(:first-child) {
         margin-left: 5rem;
       }
-    }
 
-    @media screen and (max-width: $really-really-small-breakpoint) {
+      ul {
+        padding-left: 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: $really-really-small-breakpoint) {
+    nav {
       & > a {
         margin: 1rem !important;
         padding: 0;

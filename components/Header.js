@@ -1,4 +1,5 @@
 import { useTheme } from '../context/ThemeContext'
+import Logo from './Logo'
 
 export default function Header() {
   const { theme, toggleTheme } = useTheme()
@@ -6,11 +7,7 @@ export default function Header() {
   return (
     <header>
       <div className="container header">
-        <div>
-          <h3>
-            oladotun<span>aluko</span>
-          </h3>
-        </div>
+        <Logo />
         <nav>
           <ul>
             <li>

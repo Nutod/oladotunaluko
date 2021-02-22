@@ -1,5 +1,4 @@
 import React from 'react'
-import Header from '../components/Header'
 import Layout from '../components/Layout'
 
 export default function Elements() {
@@ -7,7 +6,6 @@ export default function Elements() {
 
   return (
     <Layout>
-      <Header />
       <div>
         <div className="container">
           <h1>Level 1 heading</h1>

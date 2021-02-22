@@ -22,22 +22,8 @@ img {
 }
 
 svg {
-  width: 14px;
-  height: 14px;
-}
-
-.toggle-icon {
-  width: 25px;
-  height: 25px;
-  opacity: 0.6;
-  transition: opacity 0.1s ease-in;
-  cursor: pointer;
-
-  color: var(--textColor);
-
-  &:hover {
-    opacity: 1;
-  }
+  width: 1rem;
+  height: 1rem;
 }
 
 code {
@@ -47,4 +33,25 @@ code {
   color: var(--color-white);
   font-size: $size-400;
   padding: $size-500;
+}
+
+.toggle-icon {
+  width: 1.4rem;
+  height: 1.4rem;
+  opacity: 0.6;
+  transition: opacity 0.1s ease-in;
+  cursor: pointer;
+
+  display: grid;
+  place-items: center;
+
+  color: var(--textColor);
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.no-margin {
+  margin: 0;
 }

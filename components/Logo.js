@@ -2,14 +2,14 @@ import Link from 'next/link'
 
 export default function Logo() {
   return (
-    <Link href="/">
-      <a>
-        <div>
-          <h3>
+    <div>
+      <h3 className="no-margin">
+        <Link href="/">
+          <a>
             oladotun<span>aluko</span>
-          </h3>
-        </div>
-      </a>
-    </Link>
+          </a>
+        </Link>
+      </h3>
+    </div>
   )
 }
