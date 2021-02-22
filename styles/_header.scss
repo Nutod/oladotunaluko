@@ -5,7 +5,7 @@ header {
   margin-bottom: 2rem;
 
   @media screen and (max-width: $medium-breakpoint) {
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: min-content 1fr;
     grid-row-gap: 1rem;
   }
 
@@ -27,6 +27,12 @@ header {
 
     & > a {
       margin-left: 1.5rem;
+      padding: 0.3rem;
+      border: 0;
+
+      &:hover {
+        border-bottom: 2px solid var(--color-primary);
+      }
     }
 
     @media screen and (max-width: $medium-breakpoint) {
@@ -48,11 +54,8 @@ header {
 
       & > a {
         margin: 1rem !important;
+        padding: 0;
       }
-
-      // & > a:not(:first-child) {
-      //   margin-left: 5rem;
-      // }
     }
   }
 }
