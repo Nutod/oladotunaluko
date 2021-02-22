@@ -1,24 +1,14 @@
 import React from 'react'
+import Layout from '../components/Layout'
+import { useTheme } from '../context/ThemeContext'
 
 export default function Elements() {
-  // Move to context
-  // Use local storage for this later
-  const [theme, setTheme] = React.useState('')
+  //TODO: Use local storage for this later
 
-  const toggleTheme = () => {
-    setTheme(theme => (theme === '' ? 'dark' : ''))
-  }
-
-  React.useEffect(() => {
-    if (theme === 'dark') {
-      document.body.classList.add('dark')
-    } else {
-      document.body.classList.remove('dark')
-    }
-  }, [theme])
+  const { theme, toggleTheme } = useTheme()
 
   return (
-    <>
+    <Layout>
       <button onClick={toggleTheme}>
         Toggle {theme === '' ? 'Dark' : 'Light'}
       </button>
@@ -104,10 +94,11 @@ export default function Elements() {
         <br />I am <sup>the sup tag</sup> example
         <br />I am <tt>the tt tag</tt> example
         <br />I am <var>the var tag</var> example
-        <br />I am the <span class="small">small class</span> example
-        <br />I am the <span class="large">large class</span> example
-        <br />I am the <span class="quiet">quiet class</span> example
-        <br />I am the <span class="highlight">highlight class</span> example
+        <br />I am the <span className="small">small class</span> example
+        <br />I am the <span className="large">large class</span> example
+        <br />I am the <span className="quiet">quiet class</span> example
+        <br />I am the <span className="highlight">highlight class</span>{' '}
+        example
         <br />
       </p>
       <hr />
@@ -250,18 +241,18 @@ export default function Elements() {
           <div>
             <label>
               Button Elements:
-              <span class="small quiet">
-                Can use &lt;button&gt; tag or &lt;a class="button"&gt;
+              <span className="small quiet">
+                Can use &lt;button&gt; tag or &lt;a className="button"&gt;
               </span>
             </label>
             <br />
-            <button class="button positive">
+            <button className="button positive">
               <img src="img/icons/tick.png" alt="" /> Save
             </button>
-            <a class="button" href="#">
+            <a className="button" href="#">
               <img src="img/icons/key.png" alt="" /> Change Password
             </a>
-            <a href="#" class="button negative">
+            <a href="#" className="button negative">
               <img src="img/icons/cross.png" alt="" /> Cancel
             </a>
           </div>
@@ -277,6 +268,6 @@ export default function Elements() {
       the stylesheet's "http://yourwebsite.com" to your domain name so I don't
       look like an external link. some other content
       <br />
-    </>
+    </Layout>
   )
 }

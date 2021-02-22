@@ -1,4 +1,7 @@
+import React from 'react'
+
 import Head from 'next/head'
+import ThemeProvider from '../context/ThemeContext'
 import '../styles/main.scss'
 
 function MyApp({ Component, pageProps }) {
@@ -17,7 +20,9 @@ function MyApp({ Component, pageProps }) {
           crossOrigin=""
         />
       </Head>
-      <Component {...pageProps} />
+      <ThemeProvider>
+        <Component {...pageProps} />
+      </ThemeProvider>
     </>
   )
 }

@@ -9,11 +9,9 @@ export default function ThemeProvider({ children }) {
     setTheme(theme => (theme === '' ? 'dark' : ''))
   }
 
-  return (
-    <ThemeContext.Provider value={(theme, toggleTheme)}>
-      {children}
-    </ThemeContext.Provider>
-  )
+  const value = { theme, toggleTheme }
+
+  return <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>
 }
 
 export function useTheme() {
