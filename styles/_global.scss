@@ -1,22 +1,25 @@
 :root {
   // Color Definitions
   --color-primary: #00ebc7;
-  --color-primary-variant: #5cffe7;
+  --color-primary-glare: #5cffe7;
   --color-white: #fffffe;
   --color-secondary: #ff5470;
   --color-tertiary: #fde24f;
-  --color-tertiary-variant: #feef9a;
+  --color-tertiary-glare: #feef9a;
   --color-black: #00214d;
-  --color-black-variant: #1b2d45;
+  --color-black-glare: #1b2d45;
 
   // Color Intentions
   --backgroundColor: var(--color-white);
   --headingColor: var(--color-black);
-  --textColor: var(--color-black-variant);
+  --textColor: var(--color-black-glare);
 
   // Font Definitions
   --heading-font: 'Gilroy', sans-serif;
   --body-font: 'Noto Sans', sans-serif;
+
+  // Sizing variables
+  --base-size: 1rem;
 
   // Elevations
   --elevation-one: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
@@ -71,7 +74,7 @@ body {
   font-weight: 300;
   line-height: 1.65;
   color: var(--textColor);
-  padding: clamp(2rem, 5%, 5rem);
+  // padding: clamp(2rem, 5%, 5rem);
   overflow-x: hidden;
   font-size: 1.2rem;
 
@@ -80,24 +83,19 @@ body {
   border-image: linear-gradient(
       to right,
       var(--color-primary) 10%,
-      var(--color-primary-variant) 20%,
+      var(--color-primary-glare) 20%,
       var(--color-tertiary) 45%,
-      var(--color-tertiary-variant) 70%,
+      var(--color-tertiary-glare) 70%,
       var(--color-secondary) 90%
     )
     1;
 
-  transition: background 0.4s ease-out;
+  transition: background 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 // dark mode
 .dark {
-  --backgroundColor: var(--color-black-variant);
+  --backgroundColor: var(--color-black-glare);
   --headingColor: var(--color-white);
   --textColor: var(--color-white);
-}
-
-img {
-  border-radius: 5px;
-  box-shadow: var(--elevation-four);
 }
