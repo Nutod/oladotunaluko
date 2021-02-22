@@ -22,7 +22,7 @@ export default function Header() {
             {theme === 'dark' ? (
               <li onClick={toggleTheme}>
                 <svg
-                  className="toggle-icon"
+                  className="large-icon"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -39,7 +39,7 @@ export default function Header() {
             ) : (
               <li onClick={toggleTheme}>
                 <svg
-                  className="toggle-icon"
+                  className="large-icon"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"

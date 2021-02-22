@@ -48,8 +48,10 @@ header {
       }
     }
   }
+}
 
-  @media screen and (max-width: $large-breakpoint) {
+@media screen and (max-width: $large-breakpoint) {
+  .header {
     grid-template-rows: min-content 1fr;
     grid-row-gap: 1rem;
 
@@ -72,11 +74,17 @@ header {
 
       ul {
         padding-left: 0;
+
+        li:is(:first-child) {
+          margin-left: 0;
+        }
       }
     }
   }
+}
 
-  @media screen and (max-width: $really-really-small-breakpoint) {
+@media screen and (max-width: $really-really-small-breakpoint) {
+  .header {
     nav {
       & > a {
         margin: 1rem !important;

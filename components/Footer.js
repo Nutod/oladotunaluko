@@ -5,6 +5,9 @@ export default function Footer() {
     <footer>
       <div className="container footer">
         <Logo />
+        <div>
+          <p>&copy; {new Date().getFullYear()}</p>
+        </div>
         <nav>
           <ul>
             <li>

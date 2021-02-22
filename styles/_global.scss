@@ -8,11 +8,18 @@
   --color-tertiary-glare: #feef9a;
   --color-black: #00214d;
   --color-black-glare: #1b2d45;
+  --color-black-shade: #1e3047;
+
+  --gray-100: #f9fafb;
+  --gray-200: #f3f4f6;
+  --gray-800: #29323e;
 
   // Color Intentions
   --backgroundColor: var(--color-white);
   --headingColor: var(--color-black);
   --textColor: var(--color-black-glare);
+  --footerBackground: var(--gray-100);
+  --footerBorder: var(--gray-200);
 
   // Font Definitions
   --font-display: 'Gilroy', sans-serif;
@@ -94,4 +101,6 @@ body {
   --backgroundColor: var(--color-black-glare);
   --headingColor: var(--color-white);
   --textColor: var(--color-white);
+  --footerBackground: var(--color-black-shade);
+  --footerBorder: var(--gray-800);
 }
