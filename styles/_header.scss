@@ -2,7 +2,7 @@ header {
   display: grid;
   grid-template-columns: fit-content(35ch) 1fr;
 
-  margin-bottom: 2rem;
+  margin-bottom: $size-900;
 
   @media screen and (max-width: $medium-breakpoint) {
     grid-template-rows: min-content 1fr;
