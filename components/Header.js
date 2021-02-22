@@ -1,23 +1,63 @@
-import Head from "next/head"
-import Link from "next/link"
-import Logo from "./Logo"
+import { useTheme } from '../context/ThemeContext'
 
 export default function Header() {
+  const { theme, toggleTheme } = useTheme()
+
   return (
-    <header className="text-gray-600 shadow">
-      <div className="container mx-auto flex flex-wrap py-5 flex-col md:flex-row items-center">
-        <Logo />
-        <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-          <Link href="/about">
-            <a className="mr-5 hover:bg-gray-200 py-1 px-3 cursor-pointer focus:outline-none rounded">
-              About
-            </a>
-          </Link>
-          <Link href="/contact">
-            <a className="hover:bg-gray-200 py-1 px-3 cursor-pointer focus:outline-none rounded">
-              Contact
-            </a>
-          </Link>
+    <header>
+      <div className="container header">
+        <div>
+          <h3>
+            oladotun<span>aluko</span>
+          </h3>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="Blog">Blog</a>
+            </li>
+            <li>
+              <a href="About">About</a>
+            </li>
+            <li>
+              <a href="Contact">Contact</a>
+            </li>
+            {theme === 'dark' ? (
+              <li onClick={toggleTheme}>
+                <svg
+                  className="toggle-icon"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+                  ></path>
+                </svg>
+              </li>
+            ) : (
+              <li onClick={toggleTheme}>
+                <svg
+                  className="toggle-icon"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+                  ></path>
+                </svg>
+              </li>
+            )}
+          </ul>
         </nav>
       </div>
     </header>

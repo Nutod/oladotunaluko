@@ -15,8 +15,9 @@
   --textColor: var(--color-black-glare);
 
   // Font Definitions
-  --heading-font: 'Gilroy', sans-serif;
-  --body-font: 'Noto Sans', sans-serif;
+  --font-display: 'Gilroy', sans-serif;
+  --font-body: 'Noto Sans', sans-serif;
+  --font-mono: 'Fira Mono', monospace;
 
   // Elevations
   --elevation-one: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
@@ -67,13 +68,11 @@ html {
 
 body {
   background-color: var(--backgroundColor);
-  font-family: var(--body-font);
+  font-family: var(--font-body);
   font-weight: 300;
   line-height: 1.65;
   color: var(--textColor);
-  // padding: clamp(2rem, 5%, 5rem);
   overflow-x: hidden;
-  font-size: 1.2rem;
 
   border-width: 0.3rem 0;
   border-style: solid;

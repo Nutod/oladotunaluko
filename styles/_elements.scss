@@ -1,3 +1,21 @@
+.container {
+  max-width: 58rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: $extra-large-breakpoint) {
+    max-width: 45rem;
+  }
+
+  @media screen and (max-width: $large-breakpoint) {
+    max-width: 80%;
+  }
+
+  @media screen and (max-width: $small-breakpoint) {
+    max-width: 90%;
+  }
+}
+
 img {
   border-radius: 5px;
   box-shadow: var(--elevation-four);
@@ -6,4 +24,27 @@ img {
 svg {
   width: 14px;
   height: 14px;
+}
+
+.toggle-icon {
+  width: 25px;
+  height: 25px;
+  opacity: 0.6;
+  transition: opacity 0.1s ease-in;
+  cursor: pointer;
+
+  color: var(--textColor);
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+code {
+  font-family: var(--font-mono);
+  background: var(--color-black);
+  display: block;
+  color: var(--color-white);
+  font-size: $size-400;
+  padding: $size-500;
 }
