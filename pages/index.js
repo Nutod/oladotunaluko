@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Hero from '../components/Hero'
+import LatestPosts from '../components/LatestPosts'
 import Layout from '../components/Layout'
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       </Head>
       <Layout>
         <Hero />
+        <LatestPosts />
       </Layout>
     </>
   )
