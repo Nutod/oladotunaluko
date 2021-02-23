@@ -1,7 +1,7 @@
 footer {
   margin-top: $size-500;
-  padding-top: $size-700;
-  padding-bottom: $size-700;
+  padding-top: $size-500;
+  padding-bottom: $size-500;
   background: var(--footerBackground);
 
   border-top: 1px solid var(--footerBorder);
@@ -56,7 +56,6 @@ footer {
         opacity: 0.6;
 
         &:hover {
-          border-bottom: 2px solid var(--color-primary);
           opacity: 1;
         }
       }

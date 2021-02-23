@@ -12,8 +12,8 @@ export default function Header() {
         <nav>
           <ul>
             <li>
-              <Link href="blog">
-                <a>Blog</a>
+              <Link href="posts">
+                <a>Posts</a>
               </Link>
             </li>
             <li>

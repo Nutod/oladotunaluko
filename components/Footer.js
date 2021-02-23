@@ -13,6 +13,7 @@ export default function Footer() {
             <li>
               <a href="#" target="_blank">
                 <svg
+                  className="large-icon"
                   fill="currentColor"
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -26,6 +27,7 @@ export default function Footer() {
             <li>
               <a href="#" target="_blank">
                 <svg
+                  className="large-icon"
                   fill="currentColor"
                   stroke="currentColor"
                   strokeLinecap="round"
