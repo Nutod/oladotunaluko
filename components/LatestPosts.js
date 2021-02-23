@@ -31,18 +31,20 @@ const posts = [
 
 export default function LatestPosts() {
   return (
-    <div className="container">
-      <h3>Latest Posts</h3>
-      <div className="grid">
-        {posts.map(post => (
-          <div>
-            <img src={post.image} alt="Blog Image" />
-            <h4>{post.title}</h4>
-            <p>{post.excerpt}</p>
-            <p>{new Date(post.data).toDateString()}</p>
-          </div>
-        ))}
+    <section className="latest-posts">
+      <div className="container">
+        <h3>Latest Posts</h3>
+        <div className="grid">
+          {posts.map(post => (
+            <div>
+              <img src={post.image} alt="Blog Image" />
+              <h4>{post.title}</h4>
+              <p>{post.excerpt}</p>
+              <p>{new Date(post.data).toDateString()}</p>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   )
 }
