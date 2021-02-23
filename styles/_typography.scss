@@ -21,14 +21,29 @@ h2 {
 
 h3 {
   font-size: 2.369rem;
-
-  span {
-    color: var(--color-primary);
-  }
 }
 
 h4 {
   font-size: 1.777rem;
+
+  span {
+    color: var(--color-primary);
+  }
+
+  a {
+    &:hover {
+      opacity: 0.6;
+      color: var(--textColor);
+    }
+  }
+}
+
+.logo {
+  @media screen and (max-width: $medium-breakpoint) {
+    h4 {
+      font-size: 20px;
+    }
+  }
 }
 
 h5 {
