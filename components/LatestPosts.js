@@ -27,14 +27,17 @@ const posts = [
 
 export default function LatestPosts() {
   return (
-    <div className="grid">
-      {posts.map(post => (
-        <div>
-          <h4>{post.title}</h4>
-          <p>{post.excerpt}</p>
-          <p>{post.data}</p>
-        </div>
-      ))}
+    <div className="container">
+      <h4>Latest Posts</h4>
+      <div className="grid">
+        {posts.map(post => (
+          <div>
+            <h4>{post.title}</h4>
+            <p>{post.excerpt}</p>
+            <p>{post.data}</p>
+          </div>
+        ))}
+      </div>
     </div>
   )
 }
