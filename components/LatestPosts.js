@@ -23,7 +23,8 @@ const posts = [
   {
     image: 'https://placeimg.com/640/480/nature',
     data: 5 / 13 / 2049,
-    title: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
+    title:
+      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Some other values',
     excerpt:
       'loud work west cannot slowly not information lamp older belt grabbed radio firm clearly father guard dirt elephant chart loss medicine concerned studied total',
   },
@@ -36,11 +37,14 @@ export default function LatestPosts() {
         <h3>Latest Posts</h3>
         <div className="grid">
           {posts.map(post => (
-            <div>
+            <div className="grid-item">
               <img src={post.image} alt="Blog Image" />
-              <h4>{post.title}</h4>
-              <p>{post.excerpt}</p>
-              <p>{new Date(post.data).toDateString()}</p>
+              <div>
+                <p>{new Date(post.data).toDateString()}</p>
+                <h4>{post.title}</h4>
+                <p>{`${post.excerpt.substring(0, 120)}...`}</p>
+                <a href="">Keep Reading</a>
+              </div>
             </div>
           ))}
         </div>

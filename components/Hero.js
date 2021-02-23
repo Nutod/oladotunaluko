@@ -7,8 +7,8 @@ export default function Hero() {
           <p className="hero-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero soluta
             illo a eum, quibusdam unde doloribus fugiat veritatis incidunt vitae
-            totam nam cumque explicabo facere. Commodi nobis harum corporis
-            temporibus.
+            totam <a href="">link</a> nam cumque explicabo facere. Commodi nobis
+            harum corporis temporibus.
           </p>
         </div>
       </div>
