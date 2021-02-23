@@ -1,6 +1,10 @@
 header {
-  padding-top: $size-500;
+  padding-top: $size-700;
   padding-bottom: $size-500;
+
+  @media screen and (max-width: $really-really-small-breakpoint) {
+    padding-top: $size-500;
+  }
 }
 
 .header {
