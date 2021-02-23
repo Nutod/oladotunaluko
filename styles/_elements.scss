@@ -60,6 +60,31 @@ code {
   margin: 0;
 }
 
+.hero {
+  margin-top: $size-700;
+  padding-top: $size-400;
+  padding-bottom: $size-400;
+  // background: var(--gray-800);
+
+  h5 {
+    margin: 0;
+    margin-bottom: $size-400;
+  }
+
+  @media screen and (max-width: $large-breakpoint) {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+  }
+}
+
 .hero-text {
-  max-width: 40ch;
+  max-width: 55ch;
+
+  @media screen and (max-width: $large-breakpoint) {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
