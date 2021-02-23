@@ -16,6 +16,10 @@
   }
 }
 
+main {
+  min-height: 50vh;
+}
+
 img {
   border-radius: 5px;
   box-shadow: var(--elevation-four);
@@ -54,4 +58,8 @@ code {
 
 .no-margin {
   margin: 0;
+}
+
+.hero-text {
+  max-width: 40ch;
 }

@@ -1,11 +1,12 @@
 header {
-  padding-top: $size-400;
-  padding-bottom: $size-700;
+  padding-top: $size-500;
+  padding-bottom: $size-500;
 }
 
 .header {
   display: grid;
   grid-template-columns: fit-content(15ch) 1fr;
+  align-items: center;
 
   h4,
   a {

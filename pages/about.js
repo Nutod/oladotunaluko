@@ -1,6 +1,13 @@
-import React from 'react'
+import Head from 'next/head'
 import Layout from '../components/Layout'
 
 export default function About() {
-  return <Layout></Layout>
+  return (
+    <>
+      <Head>
+        <title>Oladotun Aluko &rarr; About</title>
+      </Head>
+      <Layout></Layout>
+    </>
+  )
 }
