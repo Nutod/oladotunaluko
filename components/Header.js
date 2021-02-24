@@ -21,11 +21,6 @@ export default function Header() {
                 <a>About</a>
               </Link>
             </li>
-            <li>
-              <Link href="contact">
-                <a>Contact</a>
-              </Link>
-            </li>
             {theme === 'dark' ? (
               <li onClick={toggleTheme}>
                 <svg
