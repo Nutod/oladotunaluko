@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import LatestPosts from '../../components/LatestPosts'
+import AllPosts from '../../components/AllPosts'
 import Layout from '../../components/Layout'
 
 export default function Posts() {
@@ -9,7 +9,7 @@ export default function Posts() {
         <title>Oladotun Aluko &rarr; All Posts</title>
       </Head>
       <Layout>
-        <LatestPosts />
+        <AllPosts />
       </Layout>
     </>
   )

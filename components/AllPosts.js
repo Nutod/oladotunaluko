@@ -61,7 +61,7 @@ const posts = [
 
 export default function AllPosts() {
   return (
-    <section className="latest-posts">
+    <section className="all-posts">
       <div className="container">
         <h3>All Posts</h3>
         <div className="grid">
