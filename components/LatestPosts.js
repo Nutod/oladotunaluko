@@ -30,15 +30,17 @@ const posts = [
   },
 ]
 
-export default function LatestPosts() {
+export default function LatestPosts({ latestPosts }) {
+  console.log(latestPosts)
+
   return (
     <section className="latest-posts">
       <div className="container">
         <h3>Latest Posts</h3>
         <div className="grid">
-          {posts.map(post => (
+          {latestPosts.map(post => (
             <div className="grid-item">
-              <img src={post.image} alt="Blog Image" />
+              <img src={post.coverImage} alt="Blog Image" />
               <div>
                 <p>{new Date(post.data).toDateString()}</p>
                 <h4>{post.title}</h4>
