@@ -33,10 +33,14 @@ svg {
 code {
   font-family: var(--font-mono);
   background: var(--color-black);
+  border-radius: 10px;
   display: block;
   color: var(--color-white);
   font-size: $size-400;
   padding: $size-500;
+  margin: $size-700 0;
+  word-wrap: break-word;
+  font-size: 17px;
 }
 
 .large-icon {
