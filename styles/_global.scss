@@ -57,19 +57,7 @@ html {
   }
 
   @media screen and (max-width: $medium-breakpoint) {
-    font-size: 75%;
-  }
-
-  @media screen and (max-width: $small-breakpoint) {
-    font-size: 60%;
-  }
-
-  @media screen and (max-width: $really-small-breakpoint) {
-    font-size: 55%;
-  }
-
-  @media screen and (max-width: $really-really-small-breakpoint) {
-    font-size: 50%;
+    font-size: 85%;
   }
 }
 
