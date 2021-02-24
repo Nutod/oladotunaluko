@@ -43,7 +43,9 @@ export default function LatestPosts() {
                 <p>{new Date(post.data).toDateString()}</p>
                 <h4>{post.title}</h4>
                 <p>{`${post.excerpt.substring(0, 120)}...`}</p>
-                <a href="">Keep Reading</a>
+                <a href="">
+                  Keep Reading <span>&rarr;</span>
+                </a>
               </div>
             </div>
           ))}
