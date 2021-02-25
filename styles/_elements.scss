@@ -33,7 +33,9 @@ svg {
 blockquote {
   padding: $size-400 $size-600;
   margin: $size-500 0;
+  font-family: var(--font-mono);
   font-style: italic;
+  font-weight: 600;
   background: var(--footerBackground);
 
   border-width: 0 0 0 0.3rem;

@@ -16,7 +16,7 @@ export default function LatestPosts({ latestPosts }) {
                 </p>
                 <h4>{post.title}</h4>
                 <p>{`${post.excerpt.substring(0, 120)}...`}</p>
-                <Link as={`/posts/${post.slug}`} href="/posts/[slug]">
+                <Link prefetch as={`/posts/${post.slug}`} href="/posts/[slug]">
                   <a>
                     Keep Reading <span>&rarr;</span>
                   </a>

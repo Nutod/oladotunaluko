@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Fira+Mono&family=Noto+Sans&display=swap"
+          href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&family=Noto+Sans&display=swap"
           rel="stylesheet"
         />
         <link
