@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Hero from '../components/Hero'
+import AboutContent from '../components/About'
 import Layout from '../components/Layout'
 
 export default function About() {
@@ -9,9 +9,11 @@ export default function About() {
         <title>Oladotun Aluko &rarr; About</title>
       </Head>
       <Layout>
-        <Hero />
-        <Hero />
-        <Hero />
+        <section className="about">
+          <div className="container">
+            <AboutContent />
+          </div>
+        </section>
       </Layout>
     </>
   )
