@@ -60,10 +60,20 @@ pre[class*='language-'] {
   align-items: center;
   justify-content: center;
 
+  time {
+    font-weight: 700;
+    opacity: 0.5;
+  }
+
+  span {
+    margin-left: 10px;
+    opacity: 0.5;
+  }
+
   p {
     margin: 0;
     color: var(--color-secondary);
-    margin-left: 2rem;
+    margin-left: 10px;
     font-weight: 700;
   }
 }

@@ -7,8 +7,6 @@ import { getAllPosts, getPostBySlug } from '../../lib/api'
 import markdownToHtml from '../../lib/markdownToHtml'
 
 export default function Post({ post }) {
-  console.log(post)
-
   return (
     <Layout>
       <Head>
@@ -35,6 +33,7 @@ export default function Post({ post }) {
           </figure>
           <div className="post-meta">
             <DateFormatter dateString={post.date} />
+            <span>•</span>
             <p>{post.readTime} min read</p>
           </div>
           <PostBody content={post.content} />
