@@ -52,6 +52,13 @@ pre[class*='language-'] {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: $size-major;
+
+  p {
+    code {
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+  }
 }
 
 .post-meta {
@@ -82,10 +89,4 @@ pre[class*='language-'] {
   margin-top: $size-600;
   margin-bottom: $size-600;
   border: 1.5px solid var(--footerBorder);
-}
-
-code {
-  font-size: 1.2rem;
-  color: green;
-  // font-weight: bold;
 }
