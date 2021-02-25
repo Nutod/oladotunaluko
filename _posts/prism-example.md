@@ -5,13 +5,15 @@ coverImage: 'https://placeimg.com/640/480/nature'
 date: '2021-01-16T05:35:07.322Z'
 ---
 
+#### Prism is the Best
+
 [**Prism**](https://prismjs.com/) is a popular syntax highlighter commonly used with Markdown.
 This example shows how to use Prism with [**Next.js**](https://nextjs.org/). Use the theme dropdown
 in the header to switch syntax highlighting themes.
 
 Next.js uses `getStaticPaths`/`getStaticProps` to generate [static pages](https://nextjs.org/docs/basic-features/data-fetching). These functions are _not_ bundled client-side, so you can **write server-side code directly**. For example, you can read Markdown files from the filesystem (`fs`) – including parsing front matter with [gray-matter](https://github.com/jonschlinkert/gray-matter). For example, let's assume you have a Markdown file located at `docs/my-post.js`.
 
-We can retrieve that file's contents using `getDocBySlug('my-post')`.
+> We can retrieve that file's contents using `getDocBySlug('my-post')`.
 
 ```js
 // lib/docs.js
