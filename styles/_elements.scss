@@ -30,6 +30,30 @@ svg {
   height: 1rem;
 }
 
+blockquote {
+  padding: $size-400 $size-600;
+  margin: $size-500 0;
+  font-style: italic;
+  background: var(--footerBackground);
+
+  border-width: 0 0 0 0.3rem;
+  border-style: solid;
+  border-image: linear-gradient(
+      to bottom,
+      var(--color-primary) 10%,
+      var(--color-primary-glare) 20%,
+      var(--color-tertiary) 45%,
+      var(--color-tertiary-glare) 70%,
+      var(--color-secondary) 90%
+    )
+    1;
+
+  p {
+    padding: 0;
+    margin: 0;
+  }
+}
+
 .large-icon {
   width: 1.4rem;
   height: 1.4rem;

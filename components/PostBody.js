@@ -1,3 +1,8 @@
 export default function PostBody({ content }) {
-  return <div dangerouslySetInnerHTML={{ __html: content }}></div>
+  return (
+    <div
+      className="post-item"
+      dangerouslySetInnerHTML={{ __html: content }}
+    ></div>
+  )
 }

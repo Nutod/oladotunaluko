@@ -1,12 +1,11 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import Layout from '../../components/Layout'
 import PostBody from '../../components/PostBody'
 import { getAllPosts, getPostBySlug } from '../../lib/api'
 import markdownToHtml from '../../lib/markdownToHtml'
 
 export default function Post({ post }) {
-  console.log(post)
-  //   {JSON.stringify(post, null, 2)}
   return (
     <Layout>
       <Head>
@@ -20,7 +19,13 @@ export default function Post({ post }) {
         <div className="container post">
           <h2>{post.meta.title}</h2>
           <figure>
-            <img src={post.meta.coverImage} alt="Nature" />
+            <Image
+              src={post.meta.coverImage}
+              layout="responsive"
+              width="100%"
+              height="60vh"
+              alt="Nature"
+            />
             <figcaption>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </figcaption>
