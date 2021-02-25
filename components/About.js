@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <div className="about-content">
-      <h3>Hi! My name is Nutod 👋</h3>
+      <h3>Hi! My name is Oladotun 👋</h3>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
         perspiciatis cumque fugiat fuga a voluptate tempore, facilis dolores

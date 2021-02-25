@@ -1,10 +1,23 @@
 .about {
-  background-color: crimson;
-  max-width: 65ch;
-  margin-left: auto;
-  margin-right: auto;
-  //   margin-bottom: $size-800;
+  margin-top: $size-500;
+
+  h3 {
+    margin-top: 0;
+  }
+
+  @media screen and (max-width: $large-breakpoint) {
+    h3 {
+      text-align: center;
+    }
+
+    p {
+      text-align: justify;
+    }
+  }
 }
 
 .about-content {
+  max-width: 70ch;
+  margin-left: auto;
+  margin-right: auto;
 }
