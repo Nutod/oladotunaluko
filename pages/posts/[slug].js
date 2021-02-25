@@ -1,11 +1,14 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import DateFormatter from '../../components/date-formatter'
 import Layout from '../../components/Layout'
 import PostBody from '../../components/PostBody'
 import { getAllPosts, getPostBySlug } from '../../lib/api'
 import markdownToHtml from '../../lib/markdownToHtml'
 
 export default function Post({ post }) {
+  console.log(post)
+
   return (
     <Layout>
       <Head>
@@ -30,6 +33,10 @@ export default function Post({ post }) {
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </figcaption>
           </figure>
+          <div className="post-meta">
+            <DateFormatter dateString={post.date} />
+            <p>{post.readTime} min read</p>
+          </div>
           <PostBody content={post.content} />
         </div>
       </section>
@@ -44,6 +51,7 @@ export async function getStaticProps({ params }) {
     'slug',
     'content',
     'coverImage',
+    'readTime',
   ])
 
   const content = await markdownToHtml(post.content || '')
