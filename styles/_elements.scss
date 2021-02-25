@@ -16,6 +16,10 @@
   }
 }
 
+:focus {
+  outline: none;
+}
+
 main {
   min-height: 50vh;
 }
@@ -78,4 +82,47 @@ blockquote {
   margin: 0;
 }
 
+form {
+  background-color: var(--footerBackground);
+  padding: $size-600 $size-500;
+  border-radius: 10px;
+  margin-top: $size-500;
+  margin-bottom: $size-500;
+  border: 2.5px solid var(--footerBorder);
 
+  h4 {
+    margin-top: 0;
+    margin-bottom: $size-400;
+  }
+
+  fieldset {
+    border: 0;
+  }
+
+  input,
+  textarea {
+    margin-top: $size-400;
+    margin-bottom: $size-600;
+    width: 100%;
+    padding: 5px 8px;
+    border-radius: 2px;
+    border: 2px solid var(--footerBorder);
+    transition: box-shadow 0.3s;
+
+    &:focus {
+      box-shadow: 0 0 0 1.5px hsl(171, 73%, 41%), 0 0 0 3.5px #5cffe7;
+    }
+  }
+
+  input {
+    min-height: 50px;
+  }
+
+  textarea {
+  }
+
+  button,
+  a {
+    width: 100%;
+  }
+}

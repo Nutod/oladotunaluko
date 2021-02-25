@@ -104,17 +104,16 @@ export default function Elements() {
             </ol>
           </li>
         </ol>
-        <dl>
-          <dt>Description list title 01</dt>
-
-          <dd>Description list description 01</dd>
-
-          <dt>Description list title 02</dt>
-
-          <dd>Description list description 02</dd>
-
-          <dd>Description list description 03</dd>
-        </dl>
+        I am <a href="http://www.something.com">an external website</a> link, so
+        readers know that I'm not a normal link.
+        <br />I am <a href="aim:something">an AIM screenname</a> link, so
+        readers know that I'm not a normal link.
+        <br />I am <a href="mailto:something">an email address</a> link, so
+        readers know that I'm not a normal link.
+        <br />I am <a href="http://yourwebsite.com">an internal link</a>. Change
+        the stylesheet's "http://yourwebsite.com" to your domain name so I don't
+        look like an external link. some other content
+        <br />
         <table>
           <caption>Table Caption</caption>
 
@@ -150,84 +149,36 @@ export default function Elements() {
         </table>
         <form action="#">
           <fieldset>
-            <legend>Form legend</legend>
+            <legend>
+              <h4>Form legend</h4>
+            </legend>
 
-            <div>
-              <label for="f1">Text input:</label>
-              <br />
-              <input type="text" id="f1" value="input text" />
+            <div className="grid">
+              <div>
+                <label htmlFor="f1">Text input</label>
+                <br />
+                <input type="text" placeholder="Input text" />
+              </div>
+              <div>
+                <label htmlFor="pw">Password input</label>
+                <br />
+                <input type="password" placeholder="Password" />
+              </div>
             </div>
 
             <div>
-              <label for="pw">Password input:</label>
-              <br />
-              <input type="password" id="pw" value="password" />
-            </div>
-
-            <div>
-              <label for="f2">Radio input:</label>
-              <br />
-              <input type="radio" id="f2" />
-            </div>
-
-            <div>
-              <label for="f3">Checkbox input:</label>
-              <br />
-              <input type="checkbox" id="f3" />
-            </div>
-
-            <div>
-              <label for="f4">Select field:</label>
-              <br />
-              <select id="f4">
-                <option>Option 01</option>
-
-                <option>Option 02</option>
-              </select>
-            </div>
-
-            <div>
-              <label for="f5">Textarea:</label>
+              <label htmlFor="f5">Textarea</label>
               <br />
               <textarea id="f5" cols="30" rows="5" />
             </div>
 
             <div>
-              <label for="f6">Input Button:</label>
-              <br />
-              <input type="button" id="f6" value="button text" />
-            </div>
-
-            <div>
-              <label>
-                Button Elements:
-                <span className="small quiet">
-                  Can use &lt;button&gt; tag or &lt;a className="button"&gt;
-                </span>
-              </label>
-              <br />
               <button className="button positive">
                 <img src="img/icons/tick.png" alt="" /> Save
               </button>
-              <a className="button" href="#">
-                <img src="img/icons/key.png" alt="" /> Change Password
-              </a>
-              <a href="#" className="button negative">
-                <img src="img/icons/cross.png" alt="" /> Cancel
-              </a>
             </div>
           </fieldset>
         </form>
-        I am <a href="http://www.something.com">an external website</a> link, so
-        readers know that I'm not a normal link.
-        <br />I am <a href="aim:something">an AIM screenname</a> link, so
-        readers know that I'm not a normal link.
-        <br />I am <a href="mailto:something">an email address</a> link, so
-        readers know that I'm not a normal link.
-        <br />I am <a href="http://yourwebsite.com">an internal link</a>. Change
-        the stylesheet's "http://yourwebsite.com" to your domain name so I don't
-        look like an external link. some other content
-        <br />
       </div>
     </Layout>
   )
