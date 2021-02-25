@@ -153,7 +153,7 @@ export default function Elements() {
               <h4>Form legend</h4>
             </legend>
 
-            <div className="grid">
+            <div className="form-grid">
               <div>
                 <label htmlFor="f1">Text input</label>
                 <br />
@@ -164,12 +164,11 @@ export default function Elements() {
                 <br />
                 <input type="password" placeholder="Password" />
               </div>
-            </div>
-
-            <div>
-              <label htmlFor="f5">Textarea</label>
-              <br />
-              <textarea id="f5" cols="30" rows="5" />
+              <div>
+                <label htmlFor="f5">Textarea</label>
+                <br />
+                <textarea id="f5" cols="30" rows="5" />
+              </div>
             </div>
 
             <div>
