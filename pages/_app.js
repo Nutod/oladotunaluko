@@ -13,12 +13,7 @@ function MyApp({ Component, pageProps }) {
           href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&family=Noto+Sans&display=swap"
           rel="stylesheet"
         />
-        <link
-          rel="preload"
-          href="/fonts/Gilroy-Bold.ttf"
-          as="font"
-          crossOrigin=""
-        />
+        <link rel="preload" href="/fonts/Gilroy-Bold.ttf" as="font" />
       </Head>
       <ThemeProvider>
         <Component {...pageProps} />
