@@ -55,8 +55,12 @@ pre[class*='language-'] {
 
   p {
     code {
-      font-size: 1.4rem;
-      font-weight: bold;
+      font-weight: 900;
+
+      &::before,
+      &::after {
+        content: '`';
+      }
     }
   }
 }
@@ -89,4 +93,8 @@ pre[class*='language-'] {
   margin-top: $size-600;
   margin-bottom: $size-600;
   border: 1.5px solid var(--footerBorder);
+}
+
+code {
+  font-family: var(--font-mono);
 }
