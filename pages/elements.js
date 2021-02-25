@@ -6,8 +6,8 @@ export default function Elements() {
 
   return (
     <Layout>
-      <div>
-        <div className="container">
+      <div className="container">
+        <div>
           <h1>Level 1 heading</h1>
           <h2>0123456789</h2>
           <p>
@@ -55,35 +55,11 @@ export default function Elements() {
           <strong>Preformated:</strong>Testing one row and another
         </pre>
         <img src="https://placeimg.com/640/480/nature" alt="Nature" />
-        <code>Code content here</code>
         <p>
           I am <a href="?abc123">the a tag</a> example
           <br />I am <abbr title="test">the abbr tag</abbr> example
           <br />I am <acronym>the acronym tag</acronym> example
           <br />I am <b>the b tag</b> example
-          <br />I am <big>the big tag</big> example
-          <br />I am <cite>the cite tag</cite> example
-          <br />I am <del>the del tag</del> example
-          <br />I am <dfn>the dfn tag</dfn> example
-          <br />I am <em>the em tag</em> example
-          <br />I am <i>the i tag</i> example
-          <br />I am <ins>the ins tag</ins> example
-          <br />I am <kbd>the kbd tag</kbd> example
-          <br />I am <q>the q tag</q> example
-          <br />I am <samp>the samp tag</samp> example
-          <br />I am <small>the small tag</small> example
-          <br />I am <span>the span tag</span> example
-          <br />I am <strong>the strong tag</strong> example
-          <br />I am <sub>the sub tag</sub> example
-          <br />I am <sup>the sup tag</sup> example
-          <br />I am <tt>the tt tag</tt> example
-          <br />I am <var>the var tag</var> example
-          <br />I am the <span className="small">small class</span> example
-          <br />I am the <span className="large">large class</span> example
-          <br />I am the <span className="quiet">quiet class</span> example
-          <br />I am the <span className="highlight">highlight class</span>{' '}
-          example
-          <br />
         </p>
         <hr />
         <ul>

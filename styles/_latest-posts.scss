@@ -1,0 +1,13 @@
+.latest-posts {
+  padding-top: $size-600;
+  padding-bottom: $size-500;
+
+  h3 {
+    margin: 0;
+    margin-bottom: $size-400;
+  }
+
+  @media screen and (max-width: $large-breakpoint) {
+    text-align: center;
+  }
+}

@@ -31,12 +31,13 @@ svg {
 }
 
 blockquote {
-  padding: $size-400 $size-600;
+  padding: $size-400 $size-500;
   margin: $size-500 0;
   font-family: var(--font-mono);
   font-style: italic;
   font-weight: 600;
   background: var(--footerBackground);
+  text-align: left;
 
   border-width: 0 0 0 0.3rem;
   border-style: solid;
@@ -77,31 +78,4 @@ blockquote {
   margin: 0;
 }
 
-.latest-posts {
-  padding-top: $size-600;
-  padding-bottom: $size-500;
 
-  h3 {
-    margin: 0;
-    margin-bottom: $size-400;
-  }
-
-  @media screen and (max-width: $large-breakpoint) {
-    text-align: center;
-  }
-}
-
-.all-posts {
-  margin-top: $size-700;
-  padding-top: $size-600;
-  padding-bottom: $size-500;
-
-  h3 {
-    margin: 0;
-    margin-bottom: $size-400;
-  }
-
-  @media screen and (max-width: $large-breakpoint) {
-    text-align: center;
-  }
-}
