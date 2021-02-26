@@ -5,6 +5,8 @@ import Logo from './Logo'
 export default function Header() {
   const { theme, toggleTheme } = useTheme()
 
+  console.log(theme)
+
   return (
     <header>
       <div className="container header">

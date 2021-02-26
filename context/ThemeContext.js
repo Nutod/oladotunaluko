@@ -16,7 +16,7 @@ function getInitialColorMode() {
       return mql.matches ? 'dark' : 'light'
     }
 
-    return 'light'
+    return 'dark'
   } else {
     return 'light'
   }
@@ -29,7 +29,12 @@ export default function ThemeProvider({ children }) {
   const [theme, setTheme] = React.useState(() => getInitialColorMode())
 
   const toggleTheme = () => {
-    setTheme(theme => (theme === 'light' ? 'dark' : 'light'))
+    let updatedThemeValue = theme === 'light' ? 'dark' : 'light'
+    setTheme(updatedThemeValue)
+
+    if (typeof window !== 'undefined') {
+      window.localStorage.setItem('color-mode', updatedThemeValue)
+    }
   }
 
   const value = { theme, toggleTheme }
