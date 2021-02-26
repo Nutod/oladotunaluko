@@ -1,12 +1,14 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 
+// TODO: Optimise for SEO
 class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
         <Head>
           <link rel="preload" href="/fonts/Gilroy-Bold.ttf" as="font" />
-
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta charSet="utf-8" />
           {/* <link href="/static/favicons/favicon.ico" rel="shortcut icon" />
           <link href="/static/favicons/site.webmanifest" rel="manifest" />
           <link
@@ -47,6 +49,7 @@ class MyDocument extends Document {
             content="eZSdmzAXlLkKhNJzfgwDqWORghxnJ8qR9_CHdAh5-xw"
             name="google-site-verification"
           /> */}
+          <title>Oladotun Aluko</title>
         </Head>
         <body>
           <Main />
