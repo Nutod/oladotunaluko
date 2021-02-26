@@ -9,47 +9,26 @@ class MyDocument extends Document {
           <link rel="preload" href="/fonts/Gilroy-Bold.ttf" as="font" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta charSet="utf-8" />
-          {/* <link href="/static/favicons/favicon.ico" rel="shortcut icon" />
-          <link href="/static/favicons/site.webmanifest" rel="manifest" />
           <link
-            rel="preconnect"
-            href="https://cdn.usefathom.com"
-            crossOrigin=""
-          />
-          <link
-            href="/static/favicons/apple-touch-icon.png"
             rel="apple-touch-icon"
             sizes="180x180"
+            href="/static/favicon/apple-touch-icon.png"
           />
           <link
-            href="/static/favicons/favicon-32x32.png"
             rel="icon"
+            type="image/png"
             sizes="32x32"
-            type="image/png"
+            href="/static/favicon//favicon-32x32.png"
           />
           <link
-            href="/static/favicons/favicon-16x16.png"
             rel="icon"
-            sizes="16x16"
             type="image/png"
+            sizes="16x16"
+            href="/static/favicon//favicon-16x16.png"
           />
-          <link
-            color="#4a9885"
-            href="/static/favicons/safari-pinned-tab.svg"
-            rel="mask-icon"
-          />
-          <meta content="#ffffff" name="theme-color" />
-          <meta content="#ffffff" name="msapplication-TileColor" />
-          <meta
-            content="/static/favicons/browserconfig.xml"
-            name="msapplication-config"
-          />
-          <meta content="14d2e73487fa6c71" name="yandex-verification" />
-          <meta
-            content="eZSdmzAXlLkKhNJzfgwDqWORghxnJ8qR9_CHdAh5-xw"
-            name="google-site-verification"
-          /> */}
-          <title>Oladotun Aluko</title>
+          <link rel="manifest" href="/static/favicon//site.webmanifest" />
+          <meta name="msapplication-TileColor" content="#00aba9" />
+          <meta name="theme-color" content="#ffffff" />
         </Head>
         <body>
           <Main />
