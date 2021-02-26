@@ -1,14 +1,10 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-
-// TODO: Optimise for SEO
 class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
         <Head>
           <link rel="preload" href="/fonts/Gilroy-Bold.ttf" as="font" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <meta charSet="utf-8" />
           <link
             rel="apple-touch-icon"
             sizes="180x180"
