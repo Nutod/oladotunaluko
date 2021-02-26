@@ -11,7 +11,7 @@ export default function Footer() {
         <nav>
           <ul>
             <li>
-              <a href="#" target="_blank">
+              <a href="https://twitter.com/Nutod_20" target="_blank">
                 <svg
                   className="large-icon"
                   fill="currentColor"
@@ -26,7 +26,10 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="#" target="_blank">
+              <a
+                href="https://www.linkedin.com/in/aluko-oladotun"
+                target="_blank"
+              >
                 <svg
                   className="large-icon"
                   fill="currentColor"
@@ -46,7 +49,7 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="#" target="_blank">
+              <a href="https://github.com/Nutod" target="_blank">
                 <svg
                   className="large-icon"
                   fill="currentColor"

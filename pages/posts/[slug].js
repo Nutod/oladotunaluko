@@ -8,7 +8,7 @@ import markdownToHtml from '../../lib/markdownToHtml'
 
 export default function Post({ post }) {
   return (
-    <Layout>
+    <Layout description={post.description} pageTitle={post.meta.title}>
       <Head>
         <title>{post.meta.title}</title>
         <link

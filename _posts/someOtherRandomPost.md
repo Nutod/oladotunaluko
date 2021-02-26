@@ -1,7 +1,7 @@
 ---
 title: 'Static Generation with Next.js'
 excerpt: 'Venenatis cras sed felis eget velit. Consectetur libero id faucibus nisl tincidunt. Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Volutpat consequat mauris nunc congue nisi vitae. Id aliquet risus feugiat in ante metus dictum at tempor. Sed blandit libero volutpat sed cras. Sed odio morbi quis commodo odio aenean sed adipiscing'
-coverImage: 'https://placeimg.com/640/480/any'
+coverImage: 'https://source.unsplash.com/tl18RPgKAEE/640x480'
 date: '2020-04-16T05:35:07.322Z'
 description: 'How to post your first component'
 ---

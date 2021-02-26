@@ -1,7 +1,7 @@
 ---
 title: 'Using Prism with Next.js'
 excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
-coverImage: 'https://placeimg.com/640/480/nature'
+coverImage: 'https://source.unsplash.com/buF7o_FLkUM/640x480'
 date: '2021-01-16T05:35:07.322Z'
 description: 'How to post your first component'
 ---
