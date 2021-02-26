@@ -1,5 +1,5 @@
-import ThemeProvider from '../context/ThemeContext'
-import '../styles/main.scss'
+import ThemeProvider from 'context/ThemeContext'
+import 'styles/main.scss'
 
 function MyApp({ Component, pageProps }) {
   return (

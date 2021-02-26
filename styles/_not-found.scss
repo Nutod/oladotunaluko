@@ -1,0 +1,8 @@
+.not-found {
+  margin: $size-major auto;
+  text-align: center;
+
+  @media screen and (max-width: $large-breakpoint) {
+    margin: $size-700 auto;
+  }
+}
