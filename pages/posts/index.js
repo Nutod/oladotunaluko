@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import AllPosts from '../../components/AllPosts'
 import Layout from '../../components/Layout'
 import { getAllPosts } from '../../lib/api'
@@ -6,10 +5,7 @@ import { getAllPosts } from '../../lib/api'
 export default function Posts({ allPosts }) {
   return (
     <>
-      <Head>
-        <title>Oladotun Aluko &rarr; All Posts</title>
-      </Head>
-      <Layout>
+      <Layout pageTitle="Oladotun Aluko &rarr; All Posts">
         <AllPosts allPosts={allPosts} />
       </Layout>
     </>

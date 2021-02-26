@@ -1,11 +1,8 @@
-import React from 'react'
 import Layout from 'components/Layout'
 
 export default function Elements() {
-  //TODO: Use local storage for this later
-
   return (
-    <Layout>
+    <Layout pageTitle="Oladotun Aluko &rarr; Kitchen Sink">
       <div className="container">
         <div>
           <h1>Level 1 heading</h1>

@@ -3,7 +3,7 @@ import Layout from 'components/Layout'
 
 export default function NotFound() {
   return (
-    <Layout pageTitle="Something is Broken">
+    <Layout pageTitle="Something is Broken :(">
       <div className="container not-found">
         <h1>Woooops! You moved so fast and got lost...</h1>
         <p>

@@ -8,9 +8,11 @@ import markdownToHtml from '../../lib/markdownToHtml'
 
 export default function Post({ post }) {
   return (
-    <Layout description={post.description} pageTitle={post.meta.title}>
+    <Layout
+      description={post.description}
+      pageTitle={`${post.meta.title} | Oladotun Aluko`}
+    >
       <Head>
-        <title>{post.meta.title}</title>
         <link
           rel="stylesheet"
           href="https://unpkg.com/prismjs@0.0.1/themes/prism-okaidia.css"
