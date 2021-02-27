@@ -82,6 +82,10 @@ blockquote {
   margin: 0;
 }
 
+strong {
+  font-weight: 900;
+}
+
 form {
   background-color: var(--footerBackground);
   padding: $size-600 $size-500;
