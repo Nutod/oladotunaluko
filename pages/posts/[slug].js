@@ -39,10 +39,10 @@ export default function Post({ post }) {
             </figcaption>
           </figure>
           <PostBody content={post.content} />
-          <div className="post-share">
+          {/* <div className="post-share">
             <h3>Share post</h3>
             <p>Copy Post Link</p>
-          </div>
+          </div> */}
         </div>
       </section>
     </Layout>
