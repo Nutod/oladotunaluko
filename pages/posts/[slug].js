@@ -9,7 +9,7 @@ import markdownToHtml from '../../lib/markdownToHtml'
 export default function Post({ post }) {
   return (
     <Layout
-      description={post.description}
+      description={post.meta.description}
       pageTitle={`${post.meta.title} | Oladotun Aluko`}
     >
       <Head>
@@ -34,9 +34,7 @@ export default function Post({ post }) {
               height="60vh"
               alt="Nature"
             />
-            <figcaption>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </figcaption>
+            <figcaption>{post.meta.imageCaption}</figcaption>
           </figure>
           <PostBody content={post.content} />
           {/* <div className="post-share">

@@ -4,6 +4,7 @@ excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo
 coverImage: 'https://source.unsplash.com/buF7o_FLkUM/640x480'
 date: '2021-01-16T05:35:07.322Z'
 description: 'How to post your first component'
+imageCaption: 'Lorem ipsum dolor sit amet'
 ---
 
 #### Prism is the Best

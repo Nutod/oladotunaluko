@@ -4,6 +4,7 @@ excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo
 coverImage: 'https://source.unsplash.com/5jSRM-M1z2Y/640x480'
 date: '2020-01-16T05:35:07.322Z'
 description: 'How to post your first component'
+imageCaption: 'Lorem ipsum dolor sit amet'
 ---
 
 # Heading
