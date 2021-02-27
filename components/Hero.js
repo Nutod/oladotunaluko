@@ -7,9 +7,9 @@ export default function Hero() {
         <div>
           <h5>Hi! My name is Oladotun</h5>
           <p className="hero-text">
-            I'm a Software Developer focused on the Frontend things of the web.
-            This is my personal site where I write about things I'm interested
-            in. If you'd like to know more about me, look{' '}
+            I'm a Software Developer focused on the front-end things of the web.
+            This is my site where I write about things I'm interested in. If
+            you'd like to know more about me, look{' '}
             <Link href="about">
               <a>here</a>
             </Link>
@@ -22,10 +22,6 @@ export default function Hero() {
               <a>here</a>
             </Link>{' '}
             as well for other posts. Hope you find something useful.
-          </p>
-          <p className="hero-text">
-            Also, if you find something you really like, please feel free to
-            share and let me know. It's always nice to get feedback.
           </p>
         </div>
       </div>

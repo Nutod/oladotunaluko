@@ -8,7 +8,7 @@ export default function AllPosts({ allPosts }) {
         <h3>All Posts</h3>
         <div className="grid">
           {allPosts.map(post => (
-            <div className="grid-item">
+            <div className="grid-item" key={post.slug}>
               <img src={post.coverImage} alt="Blog Image" />
               <div>
                 <p>

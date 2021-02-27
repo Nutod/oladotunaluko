@@ -1,17 +1,19 @@
 ---
 title: 'Using Prism with Next.js'
-excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
+excerpt: 'Prism is a popular syntax highlighter commonly used with Markdown. This example shows how to use Prism with Next.js'
 coverImage: 'https://source.unsplash.com/buF7o_FLkUM/640x480'
 date: '2021-01-16T05:35:07.322Z'
-description: 'How to post your first component'
-imageCaption: 'Lorem ipsum dolor sit amet'
+description: 'Using Prism with Next.js'
+imageCaption: 'Mountains'
 ---
 
-#### Prism is the Best
+#### Introduction
 
 [**Prism**](https://prismjs.com/) is a popular syntax highlighter commonly used with Markdown.
 This example shows how to use Prism with [**Next.js**](https://nextjs.org/). Use the theme dropdown
 in the header to switch syntax highlighting themes.
+
+#### Generating Content
 
 Next.js uses `getStaticPaths`/`getStaticProps` to generate [static pages](https://nextjs.org/docs/basic-features/data-fetching). These functions are _not_ bundled client-side, so you can **write server-side code directly**. For example, you can read Markdown files from the filesystem (`fs`) – including parsing front matter with [gray-matter](https://github.com/jonschlinkert/gray-matter). For example, let's assume you have a Markdown file located at `docs/my-post.js`.
 

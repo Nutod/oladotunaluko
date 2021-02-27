@@ -7,8 +7,8 @@ export default function About() {
       <p>
         My name is Oladotun. I'm Nigerian 🇳🇬. I was born the same year the
         beautiful people over at Netscape Communications in response to the
-        increase in demand of client side scripting languages increased decided
-        the web needed a language of it's own - that's{' '}
+        increase in demand of client-side scripting languages increased decided
+        the web needed a language of its own - that's{' '}
         <strong>Javascript</strong> in case you didn't know.
       </p>
       <p>
@@ -24,7 +24,7 @@ export default function About() {
         my University graduation in 2017, I've gone on to write code for several
         companies including{' '}
         <a rel="noopener" href="https://kudi.com/" target="_blank">
-          KudiAI
+          Kudi AI
         </a>{' '}
         and{' '}
         <a rel="noopener" href="https://www.sprinble.com/" target="_blank">
@@ -37,7 +37,7 @@ export default function About() {
         I'm always an <a href="mailto:alukodotun@gmail.com">email</a> away and
         if you prefer, you could always send a DM on{' '}
         <a rel="noopener" href="https://twitter.com/Nutod_20">
-          twitter
+          Twitter
         </a>
         .
       </p>
