@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import DateFormatter from '../../components/date-formatter'
 import Layout from '../../components/Layout'
 import PostBody from '../../components/PostBody'
@@ -27,13 +26,7 @@ export default function Post({ post }) {
             <p>{post.readTime} min read</p>
           </div>
           <figure>
-            <Image
-              src={post.meta.coverImage}
-              layout="responsive"
-              width="100%"
-              height="60vh"
-              alt="Nature"
-            />
+            <img src={post.meta.coverImage} alt={post.meta.imageCaption} />
             <figcaption>{post.meta.imageCaption}</figcaption>
           </figure>
           <PostBody content={post.content} />
