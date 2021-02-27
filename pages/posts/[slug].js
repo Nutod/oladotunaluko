@@ -21,6 +21,11 @@ export default function Post({ post }) {
       <section>
         <div className="container post">
           <h2>{post.meta.title}</h2>
+          <div className="post-meta">
+            <DateFormatter dateString={post.date} />
+            <span>•</span>
+            <p>{post.readTime} min read</p>
+          </div>
           <figure>
             <Image
               src={post.meta.coverImage}
@@ -33,11 +38,6 @@ export default function Post({ post }) {
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </figcaption>
           </figure>
-          <div className="post-meta">
-            <DateFormatter dateString={post.date} />
-            <span>•</span>
-            <p>{post.readTime} min read</p>
-          </div>
           <PostBody content={post.content} />
         </div>
       </section>
