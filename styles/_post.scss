@@ -90,6 +90,19 @@ pre[class*='language-'] {
   }
 }
 
+.post-share {
+  text-align: center;
+
+  p {
+    max-width: 100%;
+    background: var(--footerBackground);
+    display: inline-block;
+    padding: $size-400 $size-500;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+}
+
 pre[class*='language-'] {
   margin-top: $size-600;
   margin-bottom: $size-600;
