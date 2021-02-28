@@ -34,12 +34,7 @@ export default function About() {
       </p>
       <p>
         If you have an exciting project and you'd like to get in touch with me,
-        I'm always an <a href="mailto:alukodotun@gmail.com">email</a> away and
-        if you prefer, you could always send a DM on{' '}
-        <a rel="noopener" href="https://twitter.com/Nutod_20">
-          Twitter
-        </a>
-        .
+        I'm always an <a href="mailto:alukodotun@gmail.com">email</a> away.
       </p>
     </div>
   )
