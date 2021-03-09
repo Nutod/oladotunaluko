@@ -5,7 +5,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <link rel="preload" href="/fonts/Gilroy-Bold.ttf" as="font" />
+          <link href="/fonts/Gilroy-Bold.ttf" as="font" />
           <link
             rel="apple-touch-icon"
             sizes="180x180"

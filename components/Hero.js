@@ -10,7 +10,7 @@ export default function Hero() {
             I'm a Software Developer focused on the front-end things of the web.
             This is my site where I write about things I'm interested in. If
             you'd like to know more about me, look{' '}
-            <Link href="about">
+            <Link href="/about">
               <a>here</a>
             </Link>
             .
@@ -18,7 +18,7 @@ export default function Hero() {
           <p className="hero-text">
             While you're here, do check out some of my latest posts and you
             could check{' '}
-            <Link href="posts">
+            <Link href="/posts">
               <a>here</a>
             </Link>{' '}
             as well for other posts. Hope you find something useful.
