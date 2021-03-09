@@ -9,7 +9,7 @@ export default function Layout({
   description = 'Oladotun Aluko',
   pageTitle = 'Oladotun Aluko',
 }) {
-  const { theme } = useTheme()
+  const { theme, mounted } = useTheme()
 
   React.useEffect(() => {
     if (theme === 'dark') {
@@ -18,6 +18,10 @@ export default function Layout({
       document.body.classList.remove('dark')
     }
   }, [theme])
+
+  if (!mounted) {
+    return null
+  }
 
   return (
     <>
