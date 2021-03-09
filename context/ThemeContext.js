@@ -12,7 +12,7 @@ export default function ThemeProvider({ children }) {
   React.useEffect(() => {
     // 1. Check localstorage
     const persistedThemeValue = localStorage.getItem('--color-mode')
-    console.log(persistedThemeValue)
+
     if (persistedThemeValue) {
       setTheme(persistedThemeValue)
       return
@@ -25,7 +25,11 @@ export default function ThemeProvider({ children }) {
   }, [])
 
   const toggleTheme = () => {
-    setTheme(prevTheme => (prevTheme === 'light' ? 'dark' : 'light'))
+    let newTheme = theme === 'light' ? 'dark' : 'light'
+
+    // prevTheme => (prevTheme === 'light' ? 'dark' : 'light')
+    setTheme(newTheme)
+    localStorage.setItem('--color-mode', newTheme)
   }
 
   const value = { theme, toggleTheme, mounted }
