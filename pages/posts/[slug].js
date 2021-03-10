@@ -1,9 +1,9 @@
 import Head from 'next/head'
-import DateFormatter from '../../components/date-formatter'
-import Layout from '../../components/Layout'
-import PostBody from '../../components/PostBody'
-import { getAllPosts, getPostBySlug } from '../../lib/api'
-import markdownToHtml from '../../lib/markdownToHtml'
+import DateFormatter from 'components/date-formatter'
+import Layout from 'components/Layout'
+import PostBody from 'components/PostBody'
+import { getAllPosts, getPostBySlug } from 'lib/api'
+import markdownToHtml from 'lib/markdownToHtml'
 
 export default function Post({ post }) {
   return (

@@ -1,6 +1,6 @@
-import AllPosts from '../../components/AllPosts'
-import Layout from '../../components/Layout'
-import { getAllPosts } from '../../lib/api'
+import AllPosts from 'components/AllPosts'
+import Layout from 'components/Layout'
+import { getAllPosts } from 'lib/api'
 
 export default function Posts({ allPosts }) {
   return (
