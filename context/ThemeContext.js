@@ -7,7 +7,7 @@ export default function ThemeProvider({ children }) {
   const [mounted, setMounted] = React.useState(false)
   const [theme, setTheme] = React.useState('light')
 
-  React.useLayoutEffect(() => setMounted(true), [])
+  React.useEffect(() => setMounted(true), [])
 
   React.useEffect(() => {
     // 1. Check localstorage
