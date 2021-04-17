@@ -2,17 +2,23 @@ export default function About() {
   return (
     <div className="about-content">
       <h3>Hi there 👋🏿</h3>
-      <h4>I see you're here trying to find out more about me 😃</h4>
-      <p>Read on 👇🏿</p>
       <p>
-        My name is Oladotun. I'm Nigerian 🇳🇬. I was born the same year the
-        beautiful people over at Netscape Communications in response to the
-        increase in demand of client-side scripting languages increased decided
-        the web needed a language of its own - that's{' '}
-        <strong>Javascript</strong> in case you didn't know.
+        I'm Oladotun. I'm a Frontend Developer. I joined{' '}
+        <a rel="noopener" href="https://www.chopbarh.com/" target="_blank">
+          Chopbarh Gaming LLC
+        </a>{' '}
+        as a senior front-end developer in 2019 where I currently work to
+        architect and develop performant and accessible full-stack applications
+        with React and RESTful microservices. Prior to that, I was a senior
+        front-end developer at{' '}
+        <a rel="noopener" href="https://www.sprinble.com/" target="_blank">
+          Sprinble LLC
+        </a>
+        .
       </p>
       <p>
-        In 2015, I was offered and accepted a full-time opportunity with{' '}
+        As an undergraduate, I was offered and accepted a full-time opportunity
+        with{' '}
         <a
           rel="noopener"
           href="https://www.iqubesolutions.com.ng/"
@@ -25,10 +31,6 @@ export default function About() {
         companies including{' '}
         <a rel="noopener" href="https://kudi.com/" target="_blank">
           Kudi AI
-        </a>{' '}
-        and{' '}
-        <a rel="noopener" href="https://www.sprinble.com/" target="_blank">
-          Sprinble LLC
         </a>
         .
       </p>
