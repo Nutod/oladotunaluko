@@ -45,21 +45,14 @@ pre[class*='language-'] {
   font-family: var(--font-mono);
 
   font-size: 1.1rem;
-
-  margin-left: -1rem;
-  margin-right: -1rem;
 }
 
 .post-item {
   max-width: 70ch;
-  text-align: justify;
+  text-align: left;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: $size-major;
-
-  @media screen and (max-width: $medium-breakpoint) {
-    text-align: left;
-  }
 
   p {
     code {
