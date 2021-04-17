@@ -2,7 +2,7 @@
 title: 'Annotating React Components with Typescript'
 excerpt: 'Using React with Typescript is becoming increasingly more popular thanks to the obvious advantage it offers through its type safe system.'
 coverImage: 'https://source.unsplash.com/tl18RPgKAEE/1920x1439'
-date: '2020-11-16T05:35:07.322Z'
+date: '2021-03-16T05:35:07.322Z'
 description: 'Annotating React Components with Typescript'
 imageCaption: 'Chutes de Rivière-du-Loup, Québec, Canada - Unsplash'
 ---
