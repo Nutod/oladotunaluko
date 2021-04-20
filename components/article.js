@@ -1,3 +1,5 @@
+/* 
+
 ---
 title: 'React Hooks Up and Running - Part 2'
 excerpt: 'React Hooks represent a change in our approach to writing React apps. Functions can now have access to state and lifecycles...well not necessary'
@@ -77,18 +79,5 @@ React.useEffect(
   () => {
     // side effect
   },
-  [
-    /* dependency array */
-  ]
-)
-```
-
-Leave it off and you could run into an infinite loop scenario. Forget to add values your effect depends on and you’ll have stale data. Add too many values and your effect won’t be re-invoked when it needs to be.
-
-```jsx
-React.useEffect(() => {
-  setCount(count + 1)
-}, [count])
-```
-
-In the code block above, we are saying that the effect block depends on the count value. If the count value changes, we run the effect. But the effect is also changing the count value so this essentially creates an infinite loop.
+  [ 
+*/
