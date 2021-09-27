@@ -1,10 +1,10 @@
 import { createStyles, Title } from '@mantine/core'
-import Link from 'next/link'
 
-const useStyles = createStyles(theme => ({
+const useStyles = createStyles(() => ({
   heading: {
     letterSpacing: '-0.05em',
-    color: 'var(--color-logo)',
+    color: 'var(--color-heading)',
+    cursor: 'pointer',
 
     '& > span': {
       color: 'var(--color-secondary)',
