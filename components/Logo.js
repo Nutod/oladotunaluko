@@ -7,7 +7,7 @@ const useStyles = createStyles(() => ({
     cursor: 'pointer',
 
     '& > span': {
-      color: 'var(--color-secondary)',
+      color: '#3da9fc',
     },
   },
 }))
