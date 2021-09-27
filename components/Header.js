@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <header>
       <div className="container header">
-        <Logo />
+        {/* <Logo />
         <nav>
           <ul>
             <li>
@@ -58,6 +58,7 @@ export default function Header() {
             )}
           </ul>
         </nav>
+      */}
       </div>
     </header>
   )
