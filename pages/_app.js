@@ -1,4 +1,3 @@
-// import 'styles/main.scss'
 import Head from 'next/head'
 import {
   MantineProvider,
@@ -8,6 +7,8 @@ import {
   SsrProvider,
 } from '@mantine/core'
 import ThemeProvider from 'context/ThemeContext'
+
+import 'styles/main.scss'
 
 // TODO: Remove the ThemeProvider
 

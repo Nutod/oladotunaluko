@@ -1,13 +1,23 @@
+import { Container, createStyles, mergeClassNames } from '@mantine/core'
 import Link from 'next/link'
-import { useTheme } from '../context/ThemeContext'
 import Logo from './Logo'
 
-export default function Header() {
-  const { theme, toggleTheme } = useTheme()
+const useStyles = createStyles(theme => ({
+  headerContainer: {
+    background: 'pink',
+    padding: theme.spacing.sm,
+  },
+}))
 
+export default function Header() {
+  const classes = useStyles()
   return (
-    <header>
-      <div className="container header">
+    <header className={classes.headerContainer}>
+      <Container>
+        <div>
+          <Logo />
+          <button>Dark Mode</button>
+        </div>
         {/* <Logo />
         <nav>
           <ul>
@@ -59,7 +69,7 @@ export default function Header() {
           </ul>
         </nav>
       */}
-      </div>
+      </Container>
     </header>
   )
 }
