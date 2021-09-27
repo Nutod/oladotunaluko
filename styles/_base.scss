@@ -1,8 +1,8 @@
 :root {
   /* brand foundation */
-  --brand-hue: 349;
-  --brand-saturation: 84%;
-  --brand-lightness: 60%;
+  --brand-hue: 206;
+  --brand-saturation: 97%;
+  --brand-lightness: 61%;
 
   /* light */
   --brand-light: hsl(
@@ -33,35 +33,9 @@
   --surface-shadow-dark: var(--brand-hue) 50% 3%;
   --shadow-strength-dark: 0.8;
 
-  // color constants: not perfect
-  --color-primary-50: hsl(var(--brand-hue) var(--brand-saturation) 98%);
-  --color-primary-100: hsl(var(--brand-hue) var(--brand-saturation) 95%);
-  --color-primary-200: hsl(var(--brand-hue) var(--brand-saturation) 88%);
-  --color-primary-300: hsl(var(--brand-hue) var(--brand-saturation) 83%);
-  --color-primary-400: hsl(var(--brand-hue) var(--brand-saturation) 78%);
-  --color-primary-500: hsl(var(--brand-hue) var(--brand-saturation) 71%);
-  --color-primary-600: hsl(
-    var(--brand-hue) calc(var(--brand-saturation) / 2) 58%
-  );
-  --color-primary-700: hsl(
-    var(--brand-hue) calc(var(--brand-saturation) / 2) 46%
-  );
-  --color-primary-800: hsl(
-    var(--brand-hue) calc(var(--brand-saturation) / 2) 35%
-  );
-  --color-primary-900: hsl(
-    var(--brand-hue) calc(var(--brand-saturation) / 2) 25%
-  );
-
-  --gray-100: #fffffe;
-  --gray-200: #f8f9fa;
-  --gray-300: #f1f3f5;
-  --gray-400: #e9ecef;
-  --gray-500: #dee2e6;
-  --gray-600: #ced4da;
-  --gray-700: #adb5bd;
-  --gray-800: #868e96;
-  --gray-900: #495057;
+  --color-secondary: hsl(349, 84%, 60%);
+  --color-tertiary: hsl(205, 39%, 69%);
+  --color-logo: hsl(205, 84%, 22%);
 
   --space: 1rem;
   --space-100: calc(0.75 * var(--space));
@@ -73,10 +47,6 @@
   --space-700: calc(4.2 * var(--space));
   --space-800: calc(5.6 * var(--space));
   --space-900: calc(6.9 * var(--space));
-
-  // FONT VARIABLES
-  --font-primary: 'Nunito', sans-serif;
-  --font-display: 'Josefin Sans', sans-serif;
 }
 
 :root {
@@ -110,4 +80,22 @@
     --surface-shadow: var(--surface-shadow-dark);
     --shadow-strength: var(--shadow-strength-dark);
   }
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--body-surface) !important;
 }
