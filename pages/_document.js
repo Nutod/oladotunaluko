@@ -1,6 +1,35 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
+import { SsrProvider, SheetsRegistry, ServerStyles } from '@mantine/core'
 
-class MyDocument extends Document {
+export default class _Document extends Document {
+  static async getInitialProps() {
+    const registry = new SheetsRegistry()
+    const originalRenderPage = ctx.renderPage
+
+    ctx.renderPage = () =>
+      originalRenderPage({
+        // eslint-disable-next-line react/display-name
+        enhanceApp: App => props =>
+          (
+            <SsrProvider registry={registry}>
+              <App {...props} />
+            </SsrProvider>
+          ),
+      })
+
+    const initialProps = await Document.getInitialProps(ctx)
+
+    return {
+      ...initialProps,
+      styles: (
+        <>
+          {initialProps.styles}
+          <ServerStyles registry={registry} />
+        </>
+      ),
+    }
+  }
+
   render() {
     return (
       <Html lang="en">
@@ -35,5 +64,3 @@ class MyDocument extends Document {
     )
   }
 }
-
-export default MyDocument
