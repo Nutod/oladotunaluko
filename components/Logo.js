@@ -1,13 +1,17 @@
 import { createStyles, Title } from '@mantine/core'
 
-const useStyles = createStyles(() => ({
+const useStyles = createStyles(theme => ({
   heading: {
     letterSpacing: '-0.05em',
-    color: 'var(--text1)',
+    color:
+      theme.colorScheme === 'light' ? 'var(--text1)' : theme.colors.dark[0],
     cursor: 'pointer',
 
     '& > span': {
-      color: '#3da9fc',
+      color:
+        theme.colorScheme === 'light'
+          ? 'var(--color-brand)'
+          : 'var(--color-secondary)',
     },
   },
 }))
