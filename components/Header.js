@@ -34,6 +34,9 @@ const useStyles = createStyles(theme => ({
         ? theme.colors.blue[3]
         : theme.colors.dark[5],
   },
+  dividerStyling: {
+    opacity: theme.colorScheme === 'light' ? 0.4 : 0.1,
+  },
 }))
 
 export default function Header() {
@@ -72,7 +75,7 @@ export default function Header() {
           </div>
         </Container>
       </header>
-      <div style={{ opacity: '.4' }}>
+      <div className={classes.dividerStyling}>
         <Divider color="gray" />
       </div>
     </>
