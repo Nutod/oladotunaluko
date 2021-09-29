@@ -2,6 +2,7 @@ import React from 'react'
 import { Container, createStyles, Divider, ThemeIcon } from '@mantine/core'
 import { MoonIcon, SunIcon } from '@radix-ui/react-icons'
 import Logo from './Logo'
+import useDarkMode from 'hooks/use-dark-mode'
 
 const useStyles = createStyles(theme => ({
   headerContainer: {
@@ -37,7 +38,7 @@ const useStyles = createStyles(theme => ({
 
 export default function Header() {
   const classes = useStyles()
-  const [theme, setTheme] = React.useState(true)
+  const { theme, toggle } = useDarkMode()
 
   return (
     <>
@@ -46,10 +47,7 @@ export default function Header() {
           <div className={classes.headerContent}>
             <Logo />
             {theme ? (
-              <button
-                className={classes.themeButton}
-                // onClick={toggle}
-              >
+              <button className={classes.themeButton} onClick={toggle}>
                 <span>Dark theme</span>
                 <ThemeIcon
                   radius="xl"
@@ -60,10 +58,7 @@ export default function Header() {
                 </ThemeIcon>
               </button>
             ) : (
-              <button
-                className={classes.themeButton}
-                // onClick={toggle}
-              >
+              <button className={classes.themeButton} onClick={toggle}>
                 <span>Light theme</span>
                 <ThemeIcon
                   radius="xl"
@@ -77,7 +72,9 @@ export default function Header() {
           </div>
         </Container>
       </header>
-      <Divider color="gray" />
+      <div style={{ opacity: '.4' }}>
+        <Divider color="gray" />
+      </div>
     </>
   )
 }

@@ -9,11 +9,13 @@ import {
 import ThemeProvider from 'context/ThemeContext'
 
 import 'styles/main.scss'
+import useDarkMode from 'hooks/use-dark-mode'
 
 // TODO: Remove the ThemeProvider
 
 export default function App(props) {
   const { Component, pageProps } = props
+  const { theme } = useDarkMode()
 
   useStylesCleanup()
 
@@ -31,7 +33,7 @@ export default function App(props) {
         <MantineProvider
           theme={{
             /* Put your mantine theme override here */
-            colorScheme: 'light',
+            colorScheme: theme,
             fontFamily: 'Open Sans, sans-serif',
             headings: {
               fontFamily: 'Inter, sans-serif',

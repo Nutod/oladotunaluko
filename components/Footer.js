@@ -4,7 +4,7 @@ import Logo from './Logo'
 const useStyles = createStyles(() => ({
   footerWrapper: {
     paddingBlock: 'var(--space-700)',
-    background: 'var(--surface1)',
+    background: 'var(--body-surface)',
   },
   footerDate: {
     margin: 0,
@@ -15,16 +15,20 @@ export default function Footer() {
   const classes = useStyles()
 
   return (
-    <footer className={classes.footerWrapper}>
-      <Container>
-        <Group>
-          <Logo />
-          <Divider orientation="vertical" margins="sm" />
-          <p className={classes.footerDate}>
-            &copy; {new Date().getFullYear()}
-          </p>
-        </Group>
-        {/* <nav>
+    <>
+      <div style={{ opacity: '.4' }}>
+        <Divider color="gray" />
+      </div>
+      <footer className={classes.footerWrapper}>
+        <Container>
+          <Group>
+            <Logo />
+            <Divider orientation="vertical" margins="sm" />
+            <p className={classes.footerDate}>
+              &copy; {new Date().getFullYear()}
+            </p>
+          </Group>
+          {/* <nav>
           <ul>
             <li>
               <a
@@ -68,7 +72,8 @@ export default function Footer() {
             </li>
           </ul>
         </nav> */}
-      </Container>
-    </footer>
+        </Container>
+      </footer>
+    </>
   )
 }
