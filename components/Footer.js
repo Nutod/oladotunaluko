@@ -1,34 +1,31 @@
+import { Container, createStyles, Divider, Group } from '@mantine/core'
 import Logo from './Logo'
 
+const useStyles = createStyles(() => ({
+  footerWrapper: {
+    paddingBlock: 'var(--space-700)',
+    background: 'var(--surface1)',
+  },
+  footerDate: {
+    margin: 0,
+  },
+}))
+
 export default function Footer() {
+  const classes = useStyles()
+
   return (
-    <footer>
-      <div className="container footer">
-        <Logo />
-        <div>
-          <p>&copy; {new Date().getFullYear()}</p>
-        </div>
-        <nav>
+    <footer className={classes.footerWrapper}>
+      <Container>
+        <Group>
+          <Logo />
+          <Divider orientation="vertical" margins="sm" />
+          <p className={classes.footerDate}>
+            &copy; {new Date().getFullYear()}
+          </p>
+        </Group>
+        {/* <nav>
           <ul>
-            {/* <li>
-              <a
-                rel="noopener"
-                href="https://twitter.com/Nutod_20"
-                target="_blank"
-              >
-                <svg
-                  className="large-icon"
-                  fill="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                </svg>
-              </a>
-            </li> */}
             <li>
               <a
                 rel="noopener"
@@ -70,8 +67,8 @@ export default function Footer() {
               </a>
             </li>
           </ul>
-        </nav>
-      </div>
+        </nav> */}
+      </Container>
     </footer>
   )
 }

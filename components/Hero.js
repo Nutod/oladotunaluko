@@ -7,8 +7,13 @@ const useStyles = createStyles(theme => ({
     maxWidth: '40rem',
   },
   heroHeading: {
-    letterSpacing: '-0.04em',
+    letterSpacing: '-0.06em',
     marginBlockEnd: theme.spacing.md,
+    color: 'var(--text1)',
+  },
+  heroSubtitle: {
+    fontWeight: '400',
+    color: 'var(--text2)',
   },
 }))
 
@@ -18,10 +23,10 @@ export default function Hero() {
   return (
     <Container>
       <div className={classes.heroContainer}>
-        <Title order={2} className={classes.heroHeading}>
+        <Title order={3} className={classes.heroHeading}>
           Hi! My name is Oladotun
         </Title>
-        <Text>
+        <Title order={4} className={classes.heroSubtitle}>
           I'm a Software Developer focused on the front-end things of the web.
           This is my site where I write about things I'm interested in. If you'd
           like to know more about me, look{' '}
@@ -29,16 +34,8 @@ export default function Hero() {
             <a>here</a>
           </Link>
           .
-        </Text>
+        </Title>
         <br />
-        <Text>
-          While you're here, do check out some of my latest posts and you could
-          check{' '}
-          <Link href="/posts">
-            <a>here</a>
-          </Link>{' '}
-          as well for other posts. Hope you find something useful.
-        </Text>
       </div>
     </Container>
   )

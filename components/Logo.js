@@ -3,7 +3,7 @@ import { createStyles, Title } from '@mantine/core'
 const useStyles = createStyles(() => ({
   heading: {
     letterSpacing: '-0.05em',
-    color: 'var(--color-heading)',
+    color: 'var(--text1)',
     cursor: 'pointer',
 
     '& > span': {
