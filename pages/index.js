@@ -1,3 +1,4 @@
+import { Container } from '@mantine/core'
 import Hero from 'components/Hero'
 import LatestPosts from 'components/LatestPosts'
 import Layout from 'components/Layout'
@@ -10,8 +11,10 @@ export default function Index({ latestPosts }) {
         pageTitle="Oladotun Aluko &rarr; Home"
         description="Software Developer focused on the Frontend things of the web"
       >
-        <Hero />
-        <LatestPosts latestPosts={latestPosts} />
+        <Container>
+          {/* <Hero /> */}
+          <LatestPosts latestPosts={latestPosts} />
+        </Container>
       </Layout>
     </>
   )

@@ -1,5 +1,5 @@
 ---
-title: 'React Hooks Up and Running - Part 1'
+title: 'Getting Up and Running with React Hooks - First Part'
 excerpt: 'React Hooks represent a change in our approach to writing React apps. Functions can now have access to state and lifecycles...well not necessary'
 coverImage: 'https://source.unsplash.com/P8PlK2nGwqA/1920x1351'
 date: '2020-09-16T05:35:07.322Z'

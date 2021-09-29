@@ -1,13 +1,16 @@
 import { Container, createStyles, Divider, Group } from '@mantine/core'
 import Logo from './Logo'
 
-const useStyles = createStyles(() => ({
+const useStyles = createStyles(theme => ({
   footerWrapper: {
     paddingBlock: 'var(--space-700)',
-    background: 'var(--body-surface)',
   },
   footerDate: {
     margin: 0,
+  },
+  dividerStyling: {
+    marginBlockStart: theme.spacing.xl,
+    opacity: theme.colorScheme === 'light' ? 0.4 : 0.1,
   },
 }))
 
@@ -16,7 +19,7 @@ export default function Footer() {
 
   return (
     <>
-      <div style={{ opacity: '.4' }}>
+      <div className={classes.dividerStyling}>
         <Divider color="gray" />
       </div>
       <footer className={classes.footerWrapper}>

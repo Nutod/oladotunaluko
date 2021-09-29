@@ -1,9 +1,10 @@
+import { Container } from '@mantine/core'
 import Layout from 'components/Layout'
 
 export default function Elements() {
   return (
     <Layout pageTitle="Oladotun Aluko &rarr; Kitchen Sink">
-      <div className="container">
+      <Container>
         <div>
           <h1>Level 1 heading</h1>
           <h2>0123456789</h2>
@@ -175,7 +176,7 @@ export default function Elements() {
             </div>
           </fieldset>
         </form>
-      </div>
+      </Container>
     </Layout>
   )
 }
