@@ -9,7 +9,6 @@ export default function Hero() {
           <p className="hero-text">
             I'm a Software Developer focused on the front-end things of the web.
             This is my site where I write about things I'm interested in.
-            .
           </p>
           <p className="hero-text">
             While you're here, do check out some of my latest posts and you
